@@ -10,7 +10,7 @@
   <!-- Favicon Icon -->
   <link rel="icon" href="assets/img/favicon.png">
   <!-- Site Title -->
-  <title>Zivan - Contact Us</title>
+  <title>HYPHENZ - Start Up</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/animate.css">
@@ -21,6 +21,7 @@
 
 <body class="cs_dark">
   <div class="cursor" id="client_cursor">View</div>
+
   <!-- Start Preloader -->
   <div class="cs_perloader">
     <div class="cs_perloader_in">
@@ -31,6 +32,7 @@
     <span class="cs_perloader_text">Loading...</span>
   </div>
   <!-- End Preloader -->
+
   <!-- Start Header Section -->
   <header class="cs_site_header cs_style_1 cs_sticky_header cs_primary_color">
     <div class="cs_main_header">
@@ -62,71 +64,179 @@
     </div>
   </header>
   <!-- End Header Section -->
+
   <!-- Start Page Heading -->
   <div class="cs_height_70 cs_height_lg_70"></div>
   <div class="cs_height_140 cs_height_lg_80"></div>
   <div class="cs_section_heading cs_style_1 cs_type_3 ">
     <div class="container">
       <p class="cs_section_subtitle cs_accent_color cs_fs_21 mb-0 wow fadeInLeft" data-wow-duration="0.8s"
-        data-wow-delay="0.2s">Contact</p>
+        data-wow-delay="0.2s">Start Up</p>
       <div class="cs_height_20 cs_height_lg_10"></div>
-      <h2 class="cs_section_title cs_fs_68 mb-0">Get in touch for more <br>information and support</h2>
+      <h2 class="cs_section_title cs_fs_68 mb-0">To get a free consultation call within 24 hours,<br> please share with
+        us some information:</h2>
     </div>
     <div class="cs_shape_4">
       <img src="assets/img/icons/mail.svg" alt="Mail">
     </div>
   </div>
-  <div class="cs_height_85 cs_height_lg_45"></div>
+  <!-- <div class="cs_height_85 cs_height_lg_45"></div> -->
   <!-- End Page Heading -->
-  <!-- Start Contact Section -->
+
+  <!-- Start Start Section -->
   <section>
     <div class="container">
-      <div class="row align-items-center cs_gap_y_45">
-        <div class="col-lg-6">
-          <h2 class="cs_fs_50">Come & visit <br>our place!</h2>
-          <div class="cs_height_55 cs_height_lg_30"></div>
-          <ul class="cs_mp0 cs_contact_info">
-            <li>
-              <h3 class="cs_fs_29 cs_semibold">Email:</h3>
-              <p class="mb-0">hello@zivan.com</p>
-            </li>
-            <li>
-              <h3 class="cs_fs_29 cs_semibold">Phone:</h3>
-              <p class="mb-0">+54 45 454 78 23</p>
-            </li>
-            <li>
-              <h3 class="cs_fs_29 cs_semibold">Address:</h3>
-              <p class="mb-0">55/53 Jay Pathshala Apt. 908, USA</p>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <div class="cs_contact_form_wrap">
-            <div class="cs_gray_bg_3 cs_contact_form_bg"></div>
-            <form class="cs_contact_form">
-              <label class="cs_fs_21 cs_semibold cs_primary_color">Your full name</label>
-              <input placeholder="Type your name" type="text" class="cs_form_field">
-              <div class="cs_height_38 cs_height_lg_25"></div>
-              <label class="cs_fs_21 cs_semibold cs_primary_color">Give valid email</label>
-              <input placeholder="Type your email address" type="text" class="cs_form_field">
-              <div class="cs_height_38 cs_height_lg_25"></div>
-              <label class="cs_fs_21 cs_semibold cs_primary_color">Phone number</label>
-              <input placeholder="Type your phone number" type="text" class="cs_form_field">
-              <div class="cs_height_38 cs_height_lg_25"></div>
-              <label class="cs_fs_21 cs_semibold cs_primary_color">Project brief</label>
-              <textarea cols="30" rows="5" class="cs_form_field"></textarea>
-              <div class="cs_height_38 cs_height_lg_25"></div>
-              <button class="cs_btn cs_style_1">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></button>
-            </form>
+
+      <div class="cs_contact_form_wrap">
+        <div class=" cs_contact_form_bg"></div>
+        <form class="cs_contact_form" id="businessForm">
+          <!-- Business Location -->
+          <label class="cs_fs_21 cs_semibold cs_primary_color">Where do you want to start your business?</label>
+          <select id="businessType" class="cs_form_field" required>
+            <option value="">Select...</option>
+            <option value="mainland">Mainland Company</option>
+            <option value="freezone">Freezone Company</option>
+          </select>
+
+          <!-- Mainland Emirates -->
+          <div id="mainlandEmirates" class="conditional-field" style="display: none;">
+            <label class="cs_fs_21 cs_semibold cs_primary_color">Which Emirate in the UAE?</label>
+            <select class="cs_form_field">
+              <option value="">I don’t Know!</option>
+              <option>Abu Dhabi</option>
+              <option>Dubai</option>
+              <option>Sharjah</option>
+              <option>Ajman</option>
+              <option>Umm Al Quwain</option>
+              <option>Fujairah</option>
+              <option>Ras Al Khaimah</option>
+            </select>
           </div>
-        </div>
+
+          <!-- Freezone Options -->
+          <div id="freezoneOptions" class="conditional-field" style="display: none;">
+            <label class="cs_fs_21 cs_semibold cs_primary_color">Which Free Zone?</label>
+            <select class="cs_form_field">
+              <option value="">I don’t Know!</option>
+              <option>Dubai South</option>
+              <option>International Free Zone Authority</option>
+              <option>Dubai Multi Commodities Center</option>
+              <option>Sharjah Airport Intl Free Zone</option>
+              <option>Sharjah Media City</option>
+              <option>Ras Al Khaimah Economic Zone</option>
+              <option>Umm Al Quwain Free Trade Zone</option>
+              <option>Dubai Airport Free Zone</option>
+              <option>Dubai World Trade Centre</option>
+              <option>Dubai Silicon Oasis</option>
+              <option>Jebel Ali Free Zone</option>
+              <option>Abu Dhabi Airport Free Zone</option>
+              <option>KIZAD</option>
+              <option>Abu Dhabi Global Market</option>
+              <option>Twofour54</option>
+              <option>Industrial City of Abu Dhabi</option>
+              <option>Dubai Internet City</option>
+              <option>Dubai Academic City</option>
+              <option>Dubai Biotech Research Park</option>
+              <option>Dubai Design District</option>
+              <option>Gold and Diamond Park</option>
+              <option>Dubai Healthcare City</option>
+              <option>Dubai Industrial City</option>
+              <option>Dubai International Financial Centre</option>
+              <option>Dubai Knowledge Village</option>
+              <option>Dubai Media City</option>
+              <option>Dubai Outsource Zone</option>
+              <option>Dubai Studio City</option>
+              <option>Dubai Techno Park</option>
+              <option>International Media Production Zone</option>
+              <option>Hamriyah Free Zone</option>
+              <option>Ajman Free Zone</option>
+              <option>Fujairah Free Zone</option>
+              <option>Fujairah Creative City</option>
+            </select>
+          </div>
+
+          <!-- Business Activity -->
+          <label class="cs_fs_21 cs_semibold cs_primary_color">What kind of activity do you want?</label>
+          <select class="cs_form_field" required>
+            <option>Agriculture</option>
+            <option>Industry / Manufacturing</option>
+            <option>Trade & Commerce</option>
+            <option>Finance</option>
+            <option>Vocational / Craftsman</option>
+            <option>Real estate</option>
+            <option>Contracting</option>
+            <option>Facility Management</option>
+            <option>Interior Design</option>
+            <option>Tourism</option>
+            <option>Education</option>
+            <option>Health</option>
+            <option>Sports</option>
+            <option>Art</option>
+            <option>Technology</option>
+          </select>
+          <textarea placeholder="Tell us more about your business idea (optional)" class="cs_form_field"></textarea>
+
+          <!-- Legal Type -->
+          <label class="cs_fs_21 cs_semibold cs_primary_color">What is the Legal type of the company?</label>
+          <select class="cs_form_field" required>
+            <option value="">Select...</option>
+            <option>Limited Liability Company</option>
+            <option>Sole Establishment</option>
+            <option>Public Joint Stock Company</option>
+            <option>Private Joint Stock Company</option>
+            <option>I don’t know</option>
+          </select>
+
+          <!-- Number of Partners -->
+          <label class="cs_fs_21 cs_semibold cs_primary_color">What is the number of partners, including you?</label>
+          <input type="number" min="1" max="10" class="cs_form_field" required>
+
+          <!-- UAE or GCC Nationals -->
+          <label class="cs_fs_21 cs_semibold cs_primary_color">Are there any UAE or GCC nationals?</label>
+          <select class="cs_form_field" required>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+          <!-- Service Location -->
+          <label class="cs_fs_21 cs_semibold cs_primary_color">Where do you plan to offer your service?</label>
+          <select class="cs_form_field" required>
+            <option>Within the UAE</option>
+            <option>Outside the UAE</option>
+            <option>Inside and outside the UAE</option>
+          </select>
+
+          <!-- Logo/Brand -->
+          <label class="cs_fs_21 cs_semibold cs_primary_color">Do you already have a logo/brand?</label>
+          <select class="cs_form_field" required>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+          <!-- Personal Information -->
+          <label class="cs_fs_21 cs_semibold cs_primary_color">Name</label>
+          <input type="text" placeholder="Your Name" class="cs_form_field" required>
+
+          <label class="cs_fs_21 cs_semibold cs_primary_color">Email</label>
+          <input type="email" placeholder="Your Email" class="cs_form_field" required>
+
+          <label class="cs_fs_21 cs_semibold cs_primary_color">Phone Number</label>
+          <input type="tel" placeholder="Your Phone Number" class="cs_form_field" required>
+
+          <textarea placeholder="Explain more about your business (optional)" class="cs_form_field"></textarea>
+
+          <label class="cs_fs_21 cs_semibold cs_primary_color">Attachment (if any)</label>
+          <input type="file" class="cs_form_field">
+
+          <button type="submit" class="cs_btn cs_style_1">Submit</button>
+        </form>
       </div>
-    </div>
-    <div class="cs_height_0 cs_height_lg_80"></div>
+
+      <div class="cs_height_0 cs_height_lg_80"></div>
   </section>
   <!-- End Contact Section -->
 
-   <!-- Start Google Map -->
+  <!-- Start Google Map -->
   <div class="cs_map">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8625.043832976917!2d55.27810624615116!3d25.185684438553444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68307f7362d5%3A0x1d59e201dc69f737!2sBay%20Square%2010!5e1!3m2!1sen!2sus!4v1728763474597!5m2!1sen!2sus"
@@ -227,6 +337,18 @@
   <script src="assets/js/isotope.pkg.min.js"></script>
   <script src="assets/js/gsap.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // JavaScript to show or hide conditional fields based on user input
+    const businessType = document.getElementById('businessType');
+    const mainlandEmirates = document.getElementById('mainlandEmirates');
+    const freezoneOptions = document.getElementById('freezoneOptions');
+
+    businessType.addEventListener('change', function () {
+      mainlandEmirates.style.display = this.value === 'mainland' ? 'block' : 'none';
+      freezoneOptions.style.display = this.value === 'freezone' ? 'block' : 'none';
+    });
+  </script>
 </body>
 
 </html>
