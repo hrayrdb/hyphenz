@@ -48,7 +48,7 @@
               <ul class="cs_nav_list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="service.html">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="start-up.html">Start Up</a></li>
                 <li><a href="partners.html">Partners</a></li>
                 <li><a href="faq.html">FAQs</a></li>
@@ -349,6 +349,47 @@
       freezoneOptions.style.display = this.value === 'freezone' ? 'block' : 'none';
     });
   </script>
+
+  <script>
+    function toggleContactOptions() {
+      const options = document.getElementById('contact-options');
+      if (options.style.display === 'none' || options.style.display === '') {
+        options.style.display = 'flex';
+        document.addEventListener('click', closeContactOptionsOnClickOutside);
+      } else {
+        options.style.display = 'none';
+        document.removeEventListener('click', closeContactOptionsOnClickOutside);
+      }
+    }
+
+    function closeContactOptionsOnClickOutside(event) {
+      const contactOptions = document.getElementById('contact-options');
+      const contactButton = document.querySelector('.contact-us-btn');
+
+      if (!contactOptions.contains(event.target) && !contactButton.contains(event.target)) {
+        contactOptions.style.display = 'none';
+        document.removeEventListener('click', closeContactOptionsOnClickOutside); // Remove the event listener
+      }
+    }
+
+
+  </script>
+
+
+  <!-- Floating Contact Button -->
+
+  <div id="contact-button">
+    <button class="contact-us-btn" onclick="toggleContactOptions()">Contact Us</button>
+    <div id="contact-options" class="contact-options">
+      <a href="https://wa.me/1234567890" target="_blank" class="contact-option">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://t.me/username" target="_blank" class="contact-option">
+        <i class="fa-brands fa-telegram"></i> Telegram
+      </a>
+    </div>
+  </div>
+
 </body>
 
 </html>

@@ -11165,3 +11165,137 @@ textarea {
     justify-content: center;
   }
 }
+
+
+/* /////// */
+
+
+
+/* Floating Button Container - Glued to the Bottom Right */
+#contact-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Us Button - Full Width, No Padding */
+.contact-us-btn {
+  background-color: #14334e;
+  color: white;
+  border: none;
+  border-radius: 0;
+  width: 100px;
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 30px 0 0 30px;
+}
+
+.contact-us-btn:hover {
+  background-color: #1c486f;
+}
+
+/* Contact Options (Initially Hidden) */
+.contact-options {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 40px;  /* Positioned right above the button */
+  right: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.contact-option {
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-option:hover {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+
+/* Styling for FAQ Section */
+
+
+
+.faq-section {
+  padding: 40px 0;
+  background-color: #171717; /* Light background for FAQ section */
+}
+
+
+
+
+/* Styling for FAQ Questions */
+.faq-question {
+  margin-top: 50px;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #303236; /* Primary blue color for questions */
+  color: #ffffff; /* White text color */
+  margin-bottom: 10px;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Bigger font for questions */
+  font-weight: bold; /* Make question text bold */
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #203957; /* Darker blue when hovering */
+}
+
+/* Styling for FAQ Answers */
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background-color: #ffffff; /* White background for answers */
+  color: #333333; /* Dark text color for answers */
+  border-left: 5px solid #203957; /* Left border to match the question color */
+  margin-bottom: 20px;
+  border-radius: 5px; /* Rounded corners for answers */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  font-size: 16px; /* Slightly smaller font for answers */
+  line-height: 1.5; /* Better readability */
+}
+
+.faq-answer a {
+  color: #007bff; /* Link color in answer to match the theme */
+  text-decoration: underline;
+}
+
+.faq-answer a:hover {
+  color: #203957; /* Darker color on link hover */
+  text-decoration: none;
+}
+
+/* Search Box Styling */
+.search-box {
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-box input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
