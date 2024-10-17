@@ -4233,7 +4233,7 @@ hr {
 
 .cs_contact_form_wrap {
   position: relative;
-  padding: 90px 90px 110px 110px;
+  padding: 10px 90px 110px 110px;
 }
 
 @media (max-width: 1400px) {
@@ -11206,7 +11206,8 @@ textarea {
   display: none;
   flex-direction: column;
   position: absolute;
-  bottom: 40px;  /* Positioned right above the button */
+  bottom: 40px;
+  /* Positioned right above the button */
   right: 0;
   background-color: white;
   border-radius: 10px;
@@ -11236,7 +11237,8 @@ textarea {
 
 .faq-section {
   padding: 40px 0;
-  background-color: #171717; /* Light background for FAQ section */
+  background-color: #171717;
+  /* Light background for FAQ section */
 }
 
 
@@ -11247,40 +11249,55 @@ textarea {
   margin-top: 50px;
   cursor: pointer;
   padding: 15px;
-  background-color: #303236; /* Primary blue color for questions */
-  color: #ffffff; /* White text color */
+  background-color: #303236;
+  /* Primary blue color for questions */
+  color: #ffffff;
+  /* White text color */
   margin-bottom: 10px;
-  border-radius: 5px; /* Rounded corners */
-  font-size: 18px; /* Bigger font for questions */
-  font-weight: bold; /* Make question text bold */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Bigger font for questions */
+  font-weight: bold;
+  /* Make question text bold */
   transition: background-color 0.3s ease;
 }
 
 .faq-question:hover {
-  background-color: #203957; /* Darker blue when hovering */
+  background-color: #203957;
+  /* Darker blue when hovering */
 }
 
 /* Styling for FAQ Answers */
 .faq-answer {
   display: none;
   padding: 15px;
-  background-color: #ffffff; /* White background for answers */
-  color: #333333; /* Dark text color for answers */
-  border-left: 5px solid #203957; /* Left border to match the question color */
+  background-color: #ffffff;
+  /* White background for answers */
+  color: #333333;
+  /* Dark text color for answers */
+  border-left: 5px solid #203957;
+  /* Left border to match the question color */
   margin-bottom: 20px;
-  border-radius: 5px; /* Rounded corners for answers */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-  font-size: 16px; /* Slightly smaller font for answers */
-  line-height: 1.5; /* Better readability */
+  border-radius: 5px;
+  /* Rounded corners for answers */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  /* Light shadow for depth */
+  font-size: 16px;
+  /* Slightly smaller font for answers */
+  line-height: 1.5;
+  /* Better readability */
 }
 
 .faq-answer a {
-  color: #007bff; /* Link color in answer to match the theme */
+  color: #007bff;
+  /* Link color in answer to match the theme */
   text-decoration: underline;
 }
 
 .faq-answer a:hover {
-  color: #203957; /* Darker color on link hover */
+  color: #203957;
+  /* Darker color on link hover */
   text-decoration: none;
 }
 
@@ -11298,4 +11315,96 @@ textarea {
   border-radius: 5px;
   width: 100%;
   font-size: 16px;
+}
+
+
+
+
+
+
+/* New top-row header styling */
+.header-top-row {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.header-top-row .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-row .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-top-row .contact-info a {
+  text-decoration: none;
+  color: #6b6b6b6b;
+  font-weight: bold;
+}
+
+.header-top-row .contact-info a:hover {
+  color: #14334e;
+}
+
+/* Styling the dropdown button for a smaller, subtle look */
+.languages .dropdown-toggle {
+  background-color: #31313164;
+  /* Custom blue color */
+  color: rgba(255, 255, 255, 0.433);
+  border: none;
+  font-size: 12px;
+  /* Smaller font size */
+  padding: 5px 10px;
+  /* Smaller padding */
+  border-radius: 3px;
+}
+
+.languages .dropdown-toggle:hover {
+  background-color: #373737;
+  /* Slightly darker shade on hover */
+}
+
+/* Styling the dropdown menu */
+.languages .dropdown-menu {
+  background-color: #62626261;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  /* Smaller font size for menu items */
+}
+
+.languages .dropdown-item {
+  padding: 5px 10px;
+  /* Smaller padding for dropdown items */
+}
+
+.languages .dropdown-item:hover {
+  background-color: #5757575d;
+  color: #14334e;
+
+}
+
+
+.header-top-row .dropdown-menu {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-top-row .dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #14334e;
+}
+
+/* Maintain existing styles for the main header */
+.cs_main_header {
+  padding: 10px 0;
+}
+
+.flag-icon {
+  margin-right: 8px;
 }
