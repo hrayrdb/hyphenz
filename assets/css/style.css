@@ -11408,3 +11408,69 @@ textarea {
 .flag-icon {
   margin-right: 8px;
 }
+
+/* ADDED */
+
+#our-team {
+  padding: 100px 0; /* Increased padding for more vertical space */
+}
+
+.cs_team_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  max-width: 1300px; /* Further increase max width of the container */
+  margin: 0 auto;
+}
+
+.cs_team_photo img {
+  width: 600px; /* Further increase image width */
+  height: auto;
+  border-radius: 10px; /* Slightly more rounded corners */
+}
+
+.cs_team_message {
+  max-width: 700px; /* Keep the message max width wide */
+  margin-left: 60px; /* Spacing between image and text */
+}
+
+.cs_message_title {
+  font-size: 34px; /* Font size for title */
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.cs_team_text {
+  font-size: 22px; /* Font size for the message */
+  color: #fff;
+  font-style: italic;
+  line-height: 2;
+}
+
+
+#partnerships {
+  padding: 70px 0;
+}
+
+.cs_partners_list {
+  text-align: center;
+  font-size: 20px;
+}
+
+.cs_partner_item {
+  margin-bottom: 20px;
+}
+
+.cs_partner_link {
+  color: #0056b3; /* Change to match your color scheme */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cs_partner_link:hover {
+  color: #003d80; /* Darker shade on hover */
+  text-decoration: underline;
+}
