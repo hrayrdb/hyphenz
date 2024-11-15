@@ -2565,7 +2565,7 @@ hr {
 
 .cs_list.cs_style_2 li {
   position: relative;
-  padding: 4px 0 4px 54px;
+  padding: 4px 0 4px 34px;
 }
 
 .cs_list.cs_style_2 li:not(:last-child) {
@@ -4329,7 +4329,7 @@ hr {
 }
 
 .cs_category:hover {
-  background-color: rgba(253, 98, 25, 0.8);
+  background-color: rgba(199, 182, 174, 0.8);
   color: #fff;
 }
 
@@ -6520,8 +6520,15 @@ hr {
 }
 
 .cs_hero.cs_style_2 {
-  padding: 186px 0 100px;
+  padding: 190px 0 100px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .cs_hero.cs_style_2 {
+    padding: 100px 0 100px;
+    /* Specific padding for mobile screens */
+  }
 }
 
 .cs_hero.cs_style_2::before {
@@ -11412,7 +11419,8 @@ textarea {
 /* ADDED */
 
 #our-team {
-  padding: 100px 0; /* Increased padding for more vertical space */
+  padding: 100px 0;
+  /* Increased padding for more vertical space */
 }
 
 .cs_team_section {
@@ -11421,30 +11429,36 @@ textarea {
   align-items: center;
   justify-content: center;
   text-align: left;
-  max-width: 1300px; /* Further increase max width of the container */
+  max-width: 1300px;
+  /* Further increase max width of the container */
   margin: 0 auto;
 }
 
 .cs_team_photo img {
-  width: 600px; /* Further increase image width */
-  height: auto;
-  border-radius: 10px; /* Slightly more rounded corners */
+  height: 75vh;
+  /* 3/4 of the viewport height */
+  border-radius: 10px;
+  /* Slightly more rounded corners */
 }
 
 .cs_team_message {
-  max-width: 700px; /* Keep the message max width wide */
-  margin-left: 60px; /* Spacing between image and text */
+  max-width: 700px;
+  /* Keep the message max width wide */
+  margin-left: 60px;
+  /* Spacing between image and text */
 }
 
 .cs_message_title {
-  font-size: 34px; /* Font size for title */
+  font-size: 34px;
+  /* Font size for title */
   font-weight: bold;
   color: #fff;
   margin-bottom: 25px;
 }
 
 .cs_team_text {
-  font-size: 22px; /* Font size for the message */
+  font-size: 22px;
+  /* Font size for the message */
   color: #fff;
   font-style: italic;
   line-height: 2;
@@ -11465,12 +11479,210 @@ textarea {
 }
 
 .cs_partner_link {
-  color: #0056b3; /* Change to match your color scheme */
+  color: #0056b3;
+  /* Change to match your color scheme */
   text-decoration: none;
   font-weight: bold;
 }
 
 .cs_partner_link:hover {
-  color: #003d80; /* Darker shade on hover */
+  color: #003d80;
+  /* Darker shade on hover */
   text-decoration: underline;
+}
+
+
+.cs_team_section {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows items to wrap on smaller screens */
+  align-items: center;
+  justify-content: center;
+}
+
+.cs_team_photo {
+  width: 100%;
+  /* Responsive width */
+  max-width: 400px;
+  /* Maximum size for larger screens */
+  height: auto;
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+.cs_team_message {
+  max-width: 600px;
+  text-align: justify;
+  /* Ensures text alignment looks good */
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .cs_team_section {
+    flex-direction: column-reverse;
+    /* Place the image after the text */
+    text-align: center;
+    /* Center-align the content */
+  }
+
+  .cs_team_photo img {
+    max-width: 90%;
+    /* Smaller size for mobile */
+    margin: 10px auto;
+  }
+
+  .cs_team_message {
+    text-align: center;
+    /* Center-align text for mobile */
+  }
+}
+
+
+
+.government-departments {
+  padding: 20px 15px;
+  /* Ensure the section fits within the mobile frame */
+
+}
+
+.section-title {
+  font-size: 4vh;
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+.department-item {
+  text-align: center;
+}
+
+.department-logo {
+  max-width: 60px;
+  /* Adjust size for mobile */
+  height: auto;
+}
+
+.department-divider {
+  width: 2px;
+  /* Thickness of the line */
+  height: 40px;
+  /* Height of the line */
+  background-color: #ddd;
+  /* Line color */
+  margin: 0 10px;
+  /* Space between logos */
+}
+
+@media (min-width: 576px) {
+  .department-logo {
+    max-width: 80px;
+    /* Adjust size for tablets and larger screens */
+  }
+
+  .department-divider {
+    height: 50px;
+    /* Increase height for larger screens */
+  }
+}
+
+
+
+.unique-contact-form {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.unique-contact-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.unique-contact-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.unique-form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.unique-input {
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.unique-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  resize: none;
+  height: 100px;
+}
+
+.unique-submit-button {
+  background-color: #344a5d;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.unique-submit-button:hover {
+  background-color: #5a89b3;
+}
+
+/* Mobile View Styling */
+@media (max-width: 768px) {
+  .unique-form-group {
+    flex-direction: column;
+  }
+
+  .unique-input {
+    margin-bottom: 10px;
+  }
+}
+
+.full-screen-hero {
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex; /* Use Flexbox for centering */
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Align text to the center */
+}
+
+.full-screen-hero .hyphenz-image {
+  width: 40vw; /* Set image width to 50% of the viewport width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+@media (max-width: 768px) {
+  .full-screen-hero .hyphenz-image {
+    width: 70vw; /* Adjust width for smaller devices */
+  }
+}
+
+.full-screen-hero h6 {
+  font-size: 24px; /* Adjust font size for smaller headings */
+  opacity: 0.8; /* Optional: Adjust opacity for styling */
+  margin-top: 10px; /* Add spacing above the heading if needed */
 }
