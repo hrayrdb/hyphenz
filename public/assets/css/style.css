@@ -9973,6 +9973,7 @@ blockquote .blockquote-footer:before {
 .team-member {
   position: relative;
   margin-bottom: 30px;
+  background-color: floralwhite;
 }
 
 .team-member .image {
@@ -10315,6 +10316,27 @@ blockquote .blockquote-footer:before {
   .team-profile-content p {
     font-size: 18px;
   }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .team-member {
+    width: 50%;
+  }
+
+}
+
+/* For mobile devices only */
+@media (max-width: 767.98px) {
+  .team-member {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center */
+    align-items: center;
+    /* Vertically center */
+  }
+
 }
 
 /*******************************************************/
@@ -14195,4 +14217,3 @@ blockquote .blockquote-footer:before {
     left: calc(50% - 30px);
   }
 }
-

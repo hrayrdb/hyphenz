@@ -775,42 +775,42 @@ const index5 = () => {
         <div className="container">
           {/* First Row of 5 Team Members */}
           <div className="row justify-content-center">
-            <div className="col-xl-2 col-lg-4 col-sm-6">
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/departments/economy.avif" alt="Economy" />
+                  <img src="assets/images/departments/economy.webp" alt="Economy" />
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-sm-6">
+            <div className="col-xl-2 col-lg-4 col-sm-6  d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-4s">
                 <div className="image">
-                  <img src="assets/images/departments/mof.jpg" alt="MOF" />
+                  <img src="assets/images/departments/mof.webp" alt="MOF" />
                 </div>
 
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-sm-6">
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-6s">
                 <div className="image">
-                  <img src="assets/images/departments/rta.png" alt="RTA" />
+                  <img src="assets/images/departments/rta.webp" alt="RTA" />
 
                 </div>
 
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-sm-6">
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-8s">
                 <div className="image">
-                  <img src="assets/images/departments/moh.png" alt="MOH" />
+                  <img src="assets/images/departments/moh.webp" alt="MOH" />
                 </div>
 
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-sm-6">
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-1s">
                 <div className="image">
-                  <img src="assets/images/departments/land.png" alt="Land" />
+                  <img src="assets/images/departments/land.webp" alt="Land" />
                 </div>
 
               </div>
@@ -819,36 +819,39 @@ const index5 = () => {
 
           {/* Second Row of 5 Team Members */}
           <div className="row mt-5 justify-content-center">
-            <div className="col-xl-2 col-lg-4 col-sm-6">
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/departments/judicial.png" alt="Team Member" />
+                  <img src="assets/images/departments/judicial.webp" alt="Team Member" />
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-4 col-sm-6">
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-2s">
                 <div className="image">
                   <img src="assets/images/departments/courts.webp" alt="Team Member" />
                 </div>
               </div>
-            </div>            <div className="col-xl-2 col-lg-4 col-sm-6">
+            </div>
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/departments/rera.png" alt="Team Member" />
+                  <img src="assets/images/departments/rera.webp" alt="Team Member" />
                 </div>
 
               </div>
-            </div>            <div className="col-xl-2 col-lg-4 col-sm-6">
+            </div>
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/departments/moj.jpg" alt="Team Member" />
+                  <img src="assets/images/departments/moj.webp" alt="Team Member" />
                 </div>
               </div>
-            </div>            <div className="col-xl-2 col-lg-4 col-sm-6">
+            </div>
+            <div className="col-xl-2 col-lg-4 col-sm-6 d-flex justify-content-center">
               <div className="team-member style-three wow fadeInUp delay-0-2s">
                 <div className="image">
-                  <img src="assets/images/departments/moe.jpg" alt="Team Member" />
+                  <img src="assets/images/departments/moe.webp" alt="Team Member" />
                 </div>
 
               </div>
