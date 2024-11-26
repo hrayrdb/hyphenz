@@ -7209,7 +7209,7 @@ h6,
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     /* Semi-transparent black overlay */
-    url("../images/slider/jumeirah.jpg");
+    url("../images/slider/jumeirah.webp");
   background-size: cover;
   /* Ensures the image covers the area */
   background-position: center;
@@ -9307,6 +9307,7 @@ blockquote .blockquote-footer:before {
 }
 
 /* Location Map */
+
 .our-location iframe {
   height: 720px;
 }
@@ -9330,6 +9331,12 @@ blockquote .blockquote-footer:before {
 }
 
 /* Contact Page Form */
+
+.contact-page-map {
+  background-color: #0a1019;
+
+}
+
 .our-location-address .social-style-two a {
   width: 40px;
   height: 40px;

@@ -60,7 +60,8 @@ const DefaultFooter = ({ dark }) => {
                   className="theme-btn style-three"
                   href="mailto:support@gmail.com"
                 >
-                  support@gmail.com <i className="far fa-arrow-right" />
+                  admin@hyphenz.ae
+                  <i className="far fa-arrow-right" />
                 </a>
                 <a
                   className="theme-btn style-three phone-number"

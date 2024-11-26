@@ -27,7 +27,7 @@ export default class Home5Slider extends Component {
             <div
               className="slider-item"
               style={{
-                backgroundImage: "url(assets/images/slider/slide3.jpg)",
+                backgroundImage: "url(assets/images/slider/slide3.webp)",
               }}
             >
               <div className="container">
@@ -51,10 +51,10 @@ export default class Home5Slider extends Component {
                         <i className="fas fa-star" />
                       </div>
                     </div> */}
-                    <Link href="contact" className="theme-btn style-two">
+                    <Link href="start" className="theme-btn style-two">
                       Start Your Venture Now <i className="far fa-arrow-right" />
                     </Link>
-                    <Link className="read-more" href="services">
+                    <Link className="contact" href="services">
                       Existing Business <i className="far fa-arrow-right" />
                     </Link>
                   </div>

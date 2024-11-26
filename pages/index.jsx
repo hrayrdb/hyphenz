@@ -219,7 +219,7 @@ const index5 = () => {
               href="https://ad-tempo.com/"
             >
               <img
-                src="assets/images/client-logos/ad-tempo.png"
+                src="assets/images/client-logos/adtempo.png"
                 alt="AdTempo"
               />
             </Link>
@@ -859,16 +859,10 @@ const index5 = () => {
           </div>
         </div>
       </section>
-
-
       {/* Team Area end */}
 
-
-
-
-
       {/* Work Process Area start */}
-      <section className="work-process-five-area pt-130 pb-90 rpt-100 rpb-60 rel z-1">
+      {/* <section className="work-process-five-area pt-130 pb-90 rpt-100 rpb-60 rel z-1">
         <div className="container container-1290">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
@@ -935,10 +929,11 @@ const index5 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Work Process Area end */}
+
       {/* Blog Style Five start */}
-      <section className="blog-area-five pt-130 rpt-100 pb-100 rpb-70">
+      {/* <section className="blog-area-five pt-130 rpt-100 pb-100 rpb-70">
         <div className="container container-1290">
           <div className="row align-items-center pb-35">
             <div className="col-lg-8">
@@ -1067,15 +1062,16 @@ const index5 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Blog Style Five end */}
+
       {/* Work With Us Area start */}
       <section className="work-with-us-area rel z-1">
         <div className="container container-1290">
           <div className="row no-gap">
             <div className="col-xl-5 align-self-center">
               <div className="work-with-image wow fadeInUp delay-0-2s">
-                <img src="assets/images/about/work-with-us.jpg" alt="About" />
+                <img src="assets/images/about/bay-square.webp" alt="Picture" />
               </div>
             </div>
             <div className="col-xl-7 wow fadeInUp delay-0-4s">
@@ -1083,17 +1079,15 @@ const index5 = () => {
                 className="work-with-content"
                 style={{
                   backgroundImage:
-                    "url(assets/images/about/work-with-us-bg.jpg)",
+                    "url(assets/images/about/burjalarab.webp)",
                 }}
               >
                 <div className="section-title mb-10">
                   <span className="sub-title mb-15">Work With Us</span>
-                  <h2>Have Any Projects On Minds! Contact Us</h2>
+                  <h2>Have Anything On Mind? Contact Us</h2>
                 </div>
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus voluptatem
-                  accusantium doloremque laudantium reme aperiam eaque quae
-                  abillo
+                  Fill out the form and we'll reply as soon as possible.
                 </p>
                 <Link href="contact" className="theme-btn mt-15">
                   Let’s Work Together <i className="far fa-arrow-right" />
@@ -1102,8 +1096,30 @@ const index5 = () => {
             </div>
           </div>
         </div>
+        <div className="container container-1290" style={{
+          height: "100px", // Adjust height as needed
+          backgroundColor: "#0A1019", // Match or customize background color
+        }}>
+        </div>
       </section>
+
+      {/* Map */}
+      <div className="contact-page-map rpb-90 wow fadeInUp delay-0-2s">
+        <div className="container-fluid">
+          <div className="our-location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8565.603663566713!2d55.280789!3d25.185381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68307f7362d5%3A0x1d59e201dc69f737!2sBay%20Square%2010!5e1!3m2!1sen!2sus!4v1732612473918!5m2!1sen!2sus"
+              style={{ border: 0, width: "100%" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };
 export default index5;
+
+
