@@ -335,48 +335,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* Headline area start */}
-      <div className="headline-area bgc-primary pt-80 pb-65">
-        <div className="container-fluid">
-          <div className="headline-wrap marquee">
-            <span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Company Formations</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Financial Services</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Legal Advisory</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Compliance &amp; AML/CFT</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Marketing</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Commercial Office</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Website Design</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>IT Solutions</b>
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
-      {/* Headline Area end */}
 
       {/* Team Area start */}
       {/* <section className="team-area pt-130 rpt-100">

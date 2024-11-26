@@ -2,7 +2,7 @@ import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
 const Contact = () => {
   return (
-    <Layout dark>
+    <Layout header={5} footer={5} dark>
       {/* Page Banner Start */}
       <PageBanner pageName={"Contact"} />
       {/* Page Banner End */}
@@ -16,41 +16,26 @@ const Contact = () => {
                   <div className="col-xl-10">
                     <div className="section-title mb-60">
                       <span className="sub-title mb-15">Contact Us</span>
-                      <h2>Ready to Work Your Next Projects</h2>
+                      <h2>Let's Unlock Possibilities!</h2>
                     </div>
                   </div>
                 </div>
                 <div className="row gap-80 pb-30">
                   <div className="col-sm-6">
                     <div className="our-location-address mb-40">
-                      <h5>New York</h5>
-                      <p>
-                        55 One State Road, 2nd Block New York, United States
-                      </p>
-                      <a className="mailto" href="mailto:support@gmail.com">
-                        support@gmail.com
+                      <h5>Dubai, UAE</h5>
+                      <p>707, Bay Square 10, Business Bay Dubai                  </p>
+                      <a className="mailto" href="mailto:admin@hyphenz.ae">
+                        admin@hyphenz.ae
                       </a>
                       <br />
-                      <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +000 (123) 456 88
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="our-location-address mb-40">
-                      <h5>Australia</h5>
-                      <p>67 One State Road, 2nd Block Melbourne, Australia</p>
-                      <a className="mailto" href="mailto:support@gmail.com">
-                        support@gmail.com
-                      </a>
-                      <br />
-                      <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +000 (123) 456 88
+                      <a className="callto" href="callto:+971543901172">
+                        <i className="fas fa-phone" /> +971 54 390 1172
                       </a>
                     </div>
                   </div>
                 </div>
-                <h4>Follow Us</h4>
+                {/* <h4>Follow Us</h4>
                 <div className="social-style-two pt-15">
                   <a href="#">
                     <i className="fab fa-facebook-f" />
@@ -64,13 +49,13 @@ const Contact = () => {
                   <a href="#">
                     <i className="fab fa-linkedin-in" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
               <div className="contact-page-form form-style-one wow fadeInUp delay-0-2s">
                 <div className="section-title mb-35">
-                  <span className="sub-title mb-15">Get Free Quote</span>
+                  <span className="sub-title mb-15">Fill The Form</span>
                   <h3>Drop Us a Message</h3>
                 </div>
                 <form
@@ -91,7 +76,6 @@ const Contact = () => {
                           id="name"
                           name="name"
                           className="form-control"
-                          defaultValue
                           placeholder="Full Name"
                           required
                           data-error="Please enter your name"
@@ -109,7 +93,6 @@ const Contact = () => {
                           id="phone_number"
                           name="phone_number"
                           className="form-control"
-                          defaultValue
                           placeholder="Phone"
                           required
                           data-error="Please enter your Number"
@@ -127,7 +110,6 @@ const Contact = () => {
                           id="email"
                           name="email"
                           className="form-control"
-                          defaultValue
                           placeholder="Email Address"
                           required
                           data-error="Please enter your Email Address"
@@ -159,7 +141,7 @@ const Contact = () => {
                           type="submit"
                           className="theme-btn style-two w-100"
                         >
-                          Send Message us <i className="far fa-arrow-right" />
+                          Send Message<i className="far fa-arrow-right" />
                         </button>
                         <div id="msgSubmit" className="hidden" />
                       </div>
@@ -177,7 +159,7 @@ const Contact = () => {
         <div className="container-fluid">
           <div className="our-location">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8565.603663566713!2d55.280789!3d25.185381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68307f7362d5%3A0x1d59e201dc69f737!2sBay%20Square%2010!5e1!3m2!1sen!2sus!4v1732612473918!5m2!1sen!2sus"
               style={{ border: 0, width: "100%" }}
               allowFullScreen
               loading="lazy"

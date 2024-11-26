@@ -1,10 +1,21 @@
 import Link from "next/link";
 
 const PageBanner = ({ pageName }) => {
+  // Define background images for different pages
+  const backgroundImages = {
+    Faqs: "url(assets/images/banner/faqs.webp)",
+    About: "url(assets/images/banner/about.webp)",
+    Services: "url(assets/images/banner/services.webp)",
+    Contact: "url(assets/images/banner/contact.webp)",
+    Default: "url(assets/images/banner/default.webp)", // Default image if no match
+  };
+
   return (
     <section
       className="page-banner-area overlay pt-220 rpt-150 pb-170 rpb-100 rel z-1 bgs-cover text-center"
-      style={{ backgroundImage: "url(assets/images/banner/lights.webp)" }}
+      style={{
+        backgroundImage: backgroundImages[pageName] || backgroundImages.Default,
+      }}
     >
       <div className="container">
         <div className="banner-inner rpt-10">
@@ -24,4 +35,5 @@ const PageBanner = ({ pageName }) => {
     </section>
   );
 };
+
 export default PageBanner;
