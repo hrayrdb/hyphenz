@@ -267,9 +267,9 @@ const MobileMenu = () => {
   return (
     <ul className="navigation d-block d-lg-none mobile-menu">
       <li className="dropdown">
-        <a href="#">Home</a>
+        <a href="/">Home</a>
         <ul style={activeLi("home")}>
-          <li className="dropdown">
+          {/* <li className="dropdown">
             <a href="#">MultiPage</a>
             <ul style={multiMenuActiveLi("multiPage")}>
               <li>
@@ -309,8 +309,8 @@ const MobileMenu = () => {
             >
               <span className="far fa-plus" />
             </div>
-          </li>
-          <li className="dropdown">
+          </li> */}
+          {/* <li className="dropdown">
             <a href="#">OnePage</a>
             <ul style={multiMenuActiveLi("OnePage")}>
               <li>
@@ -350,18 +350,38 @@ const MobileMenu = () => {
             >
               <span className="far fa-plus" />
             </div>
-          </li>
+          </li> */}
         </ul>
-        <div className="dropdown-btn" onClick={() => activeMenuSet("home")}>
+        {/* <div className="dropdown-btn" onClick={() => activeMenuSet("home")}>
           <span className="far fa-plus" />
-        </div>
+        </div> */}
       </li>
       <li>
         <Link legacyBehavior href="about">
           About Us
         </Link>
       </li>
-      <li className="dropdown">
+      <li>
+        <Link legacyBehavior href="services">
+          Our Services
+        </Link>
+      </li>
+      <li>
+        <Link legacyBehavior href="contact">
+          Start up
+        </Link>
+      </li>
+      <li>
+        <Link legacyBehavior href="faqs">
+          faqs
+        </Link>
+      </li>
+      <li>
+        <Link legacyBehavior href="contact">
+          Contact us
+        </Link>
+      </li>
+      {/* <li className="dropdown">
         <a href="#">pages</a>
         <ul style={activeLi("pages")}>
           <li>
@@ -427,8 +447,8 @@ const MobileMenu = () => {
         <div className="dropdown-btn" onClick={() => activeMenuSet("pages")}>
           <span className="far fa-plus" />
         </div>
-      </li>
-      <li className="dropdown">
+      </li> */}
+      {/* <li className="dropdown">
         <a href="#">Services</a>
         <ul style={activeLi("Services")}>
           <li>
@@ -450,8 +470,8 @@ const MobileMenu = () => {
         <div className="dropdown-btn" onClick={() => activeMenuSet("Services")}>
           <span className="far fa-plus" />
         </div>
-      </li>
-      <li className="dropdown">
+      </li> */}
+      {/* <li className="dropdown">
         <a href="#">Projects</a>
         <ul style={activeLi("Projects")}>
           <li>
@@ -473,8 +493,8 @@ const MobileMenu = () => {
         <div className="dropdown-btn" onClick={() => activeMenuSet("Projects")}>
           <span className="far fa-plus" />
         </div>
-      </li>
-      <li className="dropdown">
+      </li> */}
+      {/* <li className="dropdown">
         <a href="#">blog</a>
         <ul style={activeLi("blog")}>
           <li>
@@ -496,7 +516,7 @@ const MobileMenu = () => {
         <div className="dropdown-btn" onClick={() => activeMenuSet("blog")}>
           <span className="far fa-plus" />
         </div>
-      </li>
+      </li> */}
     </ul>
   );
 };

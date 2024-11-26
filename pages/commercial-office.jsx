@@ -12,7 +12,7 @@ const ServiceDetails = () => {
   ];
   const [active, setActive] = useState("collapse0");
   return (
-    <Layout dark>
+    <Layout header={5} footer={5} dark>
       {/* Page Banner Section Start */}
       <section
         className="page-banner pt-210 rpt-150 pb-25 rel z-1"
@@ -22,7 +22,7 @@ const ServiceDetails = () => {
           <div className="row">
             <div className="col-lg-12">
               <h1 className="hero-title style-two mb-100 rmb-50 wow fadeInUp delay-0-2s">
-                Web Design
+                Commercial Office
                 <img
                   className="mxw-10 leaf"
                   src="assets/images/banner/leaf.png"
