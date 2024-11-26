@@ -9,36 +9,61 @@ const Counter = dynamic(() => import("@/src/components/Counter"), {
 });
 const About = () => {
   return (
-    <Layout dark>
+    <Layout footer={5} dark>
       {/* Page Banner Section Start */}
       <section
-        className="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
+        className="hero-area-two pt-220 rpt-150 pb-80 rpb-50 rel z-1"
         style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
       >
         <div className="container">
-          <div className="row">
-            <div className="col-xl-10 col-lg-11">
-              <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-                We’re Digital Web
+          <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
+            Welcome
+            <span className="arrow">
+              <img
+                className="wow fadeInLeft delay-0-6s"
+                src="assets/images/hero/title-arrow.png"
+                alt="Arrow"
+              />
+            </span>
+            <br />To Hyphenz
+          </h1>
+          <div className="row align-items-center justify-content-between">
+            <div className="col-xl-3 col-lg-4">
+              <div className="hero-two-content mb-50 wow fadeInRight delay-0-2s">
+                <p>
+                  Hyphenz Consultancy is a boutique of experts that provides specialized project management solutions.
+                  We offer comprehensive consulting services, combining our legal and project management expertise with industry-specific knowledge to deliver exceptional results.
+                  <br /> We are primarly based in Dubai, UAE.
+                </p>
                 <img
-                  className="mxw-20"
-                  src="assets/images/banner/inside-title1.png"
-                  alt="title"
+                  className="mt-20"
+                  src="assets/images/hero/arrow.png"
+                  alt="Arrow"
                 />
-                <img
-                  className="mxw-40"
-                  src="assets/images/banner/inside-title2.png"
-                  alt="title"
-                />
-                Development Agency
-                <span className="arrow">
-                  <img
-                    className="wow fadeInLeft delay-0-6s"
-                    src="assets/images/hero/title-arrow.png"
-                    alt="Arrow"
-                  />
-                </span>
-              </h1>
+                {/* <div className="authors-text mt-45">
+                  <img src="assets/images/hero/author1.png" alt="Author" />
+                  <img src="assets/images/hero/author2.png" alt="Author" />
+                  <img src="assets/images/hero/author3.png" alt="Author" />
+                  <img src="assets/images/hero/author4.png" alt="Author" />
+                  <i className="fal fa-plus" />
+                  <span className="text">100+ Popular Clients</span>
+                </div> */}
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="hero-two-image mb-50 wow zoomIn delay-0-2s">
+                <img src="assets/images/hero/slide3.webp" alt="Hero" />
+              </div>
+            </div>
+            <div className="col-lg-2">
+              <div className="hero-two-btn mb-50 wow fadeInLeft delay-0-2s">
+                <Link legacyBehavior href="/services">
+                  <a className="explore-more">
+                    <i className="fas fa-arrow-right" />{" "}
+                    <span>Explore Services</span>
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -46,7 +71,7 @@ const About = () => {
 
       {/* Page Banner Section End */}
       {/* Video Area start */}
-      <div className="video-area-two rel z-1">
+      {/* <div className="video-area-two rel z-1">
         <div className="container-fluid">
           <div className="video-part style-two mb-40 wow fadeInUp delay-0-2s">
             <img src="assets/images/video/video-two-bg.jpg" alt="Video" />
@@ -109,7 +134,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Video Area end */}
       {/* Who We Are start */}
       <section className="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
@@ -117,8 +142,8 @@ const About = () => {
           <div className="row justify-content-center">
             <div className="col-lg-7">
               <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-15">Who We Are</span>
-                <h2>We are Professional and Experience Team </h2>
+                <span className="sub-title mb-15">Our</span>
+                <h2>Philosophy</h2>
               </div>
             </div>
           </div>
@@ -127,11 +152,11 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-2s">
                 <div className="why-choose-header">
                   <i className="flaticon-creativity" />
-                  <h5>Customize your site</h5>
+                  <h5>Understanding Client Needs
+                  </h5>
                 </div>
                 <p>
-                  At vero eos et accusamus iusto dignissim ducimuse blanditiis
-                  praesentiue
+                  Taking the time to listen and comprehend clients' goals and challenges to offer effective solutions.
                 </p>
               </div>
             </div>
@@ -139,11 +164,10 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-4s">
                 <div className="why-choose-header">
                   <i className="flaticon-mobile-banking" />
-                  <h5>Edit your mobile view</h5>
+                  <h5>Providing Added Value</h5>
                 </div>
                 <p>
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                  corporis suscipit
+                  Delivering exceptional benefits and insights beyond expectations to ensure client satisfaction.
                 </p>
               </div>
             </div>
@@ -151,11 +175,11 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-6s">
                 <div className="why-choose-header">
                   <i className="flaticon-optimization-1" />
-                  <h5>Optimize search engines</h5>
+                  <h5>Tailored Solutions
+                  </h5>
                 </div>
                 <p>
-                  Quis autem vel eum iure reprehenderi qui ea voluptate velit
-                  esse quam nihile
+                  Crafting customized strategies and services to meet each client's unique requirements.
                 </p>
               </div>
             </div>
@@ -163,6 +187,154 @@ const About = () => {
         </div>
       </section>
       {/* Who We Are end */}
+      {/* Who We Are start */}
+      <section className="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
+        <div className="container container-1290">
+          <div className="row justify-content-center">
+            <div className="col-lg-7">
+              <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
+                <span className="sub-title mb-15">Our</span>
+                <h2>Vision</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row gap-90">
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-2s">
+                <div className="why-choose-header">
+                  <i className="flaticon-petals" />
+                  <h5>Leading Consultancy Firm
+                  </h5>
+                </div>
+                <p>
+                  Striving to be the foremost choice for innovative and impactful consulting solutions.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-4s">
+                <div className="why-choose-header">
+                  <i className="flaticon-star-symbol" />
+                  <h5>Empowering Clients                  </h5>
+                </div>
+                <p>
+                  Committed to enabling clients to reach their full potential through transformative support and guidance.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-6s">
+                <div className="why-choose-header">
+                  <i className="flaticon-quote" />
+                  <h5>Trusted Partner
+
+                  </h5>
+                </div>
+                <p>
+                  Aiming to foster enduring partnerships built on trust, reliability, and mutual success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Who We Are end */}
+
+      {/* Who We Are start */}
+      <section className="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
+        <div className="container container-1290">
+          <div className="row justify-content-center">
+            <div className="col-lg-7">
+              <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
+                <span className="sub-title mb-15">Our</span>
+                <h2>Mission</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row gap-90">
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-2s">
+                <div className="why-choose-header">
+                  <i className="flaticon-abstract" />
+                  <h5>Comprehensive Legal Consultancy
+                  </h5>
+                </div>
+                <p>
+                  We provide specialized services to help you successfully manage and resolve legal matters. </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-4s">
+                <div className="why-choose-header">
+                  <i className="flaticon-liquid" />
+                  <h5>Value-Driven Solutions</h5>
+                </div>
+                <p>
+                  Our mission is to deliver practical advice and solutions that add measurable value while minimizing risks.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-6s">
+                <div className="why-choose-header">
+                  <i className="flaticon-brainstorming" />
+                  <h5>Client-Centric Approach
+                  </h5>
+                </div>
+                <p>
+                  We are committed to optimizing outcomes and ensuring your satisfaction through personalized and effective legal strategies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Who We Are end */}
+
+
+      <section className="client-logo-area pt-130 rpt-100 pb-100 rpb-70">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-7">
+              <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
+                <span className="sub-title mb-15">Our</span>
+                <h2>Partners</h2>
+              </div>
+            </div>
+          </div>
+          <div className="container">
+            <div className="client-logo-wrap">
+              <Link
+                className="client-logo-item wow fadeInUp delay-0-2s"
+                href="https://premier-ecfm.ae/"
+              >
+                <img
+                  src="assets/images/client-logos/premier.png"
+                  alt="Premier"
+                />
+              </Link>
+              <Link
+                className="client-logo-item wow fadeInUp delay-0-3s"
+                href="https://ad-tempo.com/"
+              >
+                <img
+                  src="assets/images/client-logos/adtempo.png"
+                  alt="AdTempo"
+                />
+              </Link>
+              <Link
+                className="client-logo-item wow fadeInUp delay-0-4s"
+                href="https://www.raseelrealestate.ae/"
+              >
+                <img
+                  src="assets/images/client-logos/RRE.png"
+                  alt="REE"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Headline area start */}
       <div className="headline-area bgc-primary pt-80 pb-65">
         <div className="container-fluid">
@@ -170,47 +342,44 @@ const About = () => {
             <span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
+                <b>Company Formations</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
+                <b>Financial Services</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
+                <b>Legal Advisory</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
+                <b>Compliance &amp; AML/CFT</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
+                <b>Marketing</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
+                <b>Commercial Office</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Design &amp; Branding</b>
+                <b>Website Design</b>
               </span>
               <span className="marquee-item">
                 <i className="fas fa-star-of-life" />
-                <b>Web Development</b>
-              </span>
-              <span className="marquee-item">
-                <i className="fas fa-star-of-life" />
-                <b>Mobile Apps</b>
+                <b>IT Solutions</b>
               </span>
             </span>
           </div>
         </div>
       </div>
       {/* Headline Area end */}
+
       {/* Team Area start */}
-      <section className="team-area pt-130 rpt-100">
+      {/* <section className="team-area pt-130 rpt-100">
         <div className="container-fluid">
           <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
             <div className="col">
@@ -408,10 +577,11 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Team Area end */}
+
       {/* Statistics Area start */}
-      <div
+      {/* <div
         className="statistics-area pt-100 rpt-70 rel z-1"
         style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
       >
@@ -447,8 +617,9 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Statistics Area end */}
+
       {/* Testimonial Area start */}
       <section className="testimonial-section pt-70 rpt-30">
         <div className="container container-1210">
@@ -456,10 +627,10 @@ const About = () => {
             <div className="col-lg-6">
               <div className="image-border-shape rmb-20 wow fadeInRight delay-0-2s">
                 <img
-                  src="assets/images/testimonials/testimonials-four.jpg"
+                  src="assets/images/testimonials/testimonials-four.png"
                   alt="Testimonial Left Image"
                 />
-                <div className="bottom-border" />
+                {/* <div className="bottom-border" /> */}
               </div>
             </div>
             <div className="col-lg-6">
@@ -471,12 +642,10 @@ const About = () => {
                   <SwiperSlide className="testimonial-item">
                     <div className="author-speech">
                       <p>
-                        <span className="quote">“</span> On the other hand we
-                        denounce with see righteous indignation and dislike men
-                        who are beguiled and demoralized by the charms offset
-                        pleasure moments line desire that they cannot foresee
-                        pain and trouble that are bound ensue and equal blame
-                        belongs their duty{" "}
+                        <span className="quote">“</span> At Hyphenz, we don’t just provide legal services; we deliver peace of mind.
+                        With expertise you can trust and solutions tailored to your needs, we stand by your side every step of the way.
+                        Your goals become our mission, and your challenges inspire our dedication.
+                        Together, we’ll navigate complexities and achieve success with confidence.{" "}
                         <span className="quote right-quote">“</span>
                       </p>
                     </div>
@@ -484,124 +653,22 @@ const About = () => {
                       <div className="testimonial-author">
                         <div className="author-image">
                           <img
-                            src="assets/images/testimonials/author1.png"
-                            alt="Author Image"
+                            src="assets/images/favicon.png"
+                            alt="Favicon"
                           />
                         </div>
                         <div className="author-info">
-                          <h4>James N. Johnson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
+                          <h4>Message from our Founder.</h4>
+                          {/* <span className="designation">CEO &amp; Founder</span> */}
                         </div>
                       </div>
-                      <div className="ratting style-two">
+                      {/* <div className="ratting style-two">
                         <i className="fas fa-star" />
                         <i className="fas fa-star" />
                         <i className="fas fa-star" />
                         <i className="fas fa-star" />
                         <i className="fas fa-star-half-alt" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="testimonial-item">
-                    <div className="author-speech">
-                      <p>
-                        <span className="quote">“</span> On the other hand we
-                        denounce with see righteous indignation and dislike men
-                        who are beguiled and demoralized by the charms offset
-                        pleasure moments line desire that they cannot foresee
-                        pain and trouble that are bound ensue and equal blame
-                        belongs their duty{" "}
-                        <span className="quote right-quote">“</span>
-                      </p>
-                    </div>
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-image">
-                          <img
-                            src="assets/images/testimonials/author1.png"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-info">
-                          <h4>James N. Johnson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                      <div className="ratting style-two">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star-half-alt" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="testimonial-item">
-                    <div className="author-speech">
-                      <p>
-                        <span className="quote">“</span> On the other hand we
-                        denounce with see righteous indignation and dislike men
-                        who are beguiled and demoralized by the charms offset
-                        pleasure moments line desire that they cannot foresee
-                        pain and trouble that are bound ensue and equal blame
-                        belongs their duty{" "}
-                        <span className="quote right-quote">“</span>
-                      </p>
-                    </div>
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-image">
-                          <img
-                            src="assets/images/testimonials/author1.png"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-info">
-                          <h4>James N. Johnson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                      <div className="ratting style-two">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star-half-alt" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="testimonial-item">
-                    <div className="author-speech">
-                      <p>
-                        <span className="quote">“</span> On the other hand we
-                        denounce with see righteous indignation and dislike men
-                        who are beguiled and demoralized by the charms offset
-                        pleasure moments line desire that they cannot foresee
-                        pain and trouble that are bound ensue and equal blame
-                        belongs their duty{" "}
-                        <span className="quote right-quote">“</span>
-                      </p>
-                    </div>
-                    <div className="testimonial-footer">
-                      <div className="testimonial-author">
-                        <div className="author-image">
-                          <img
-                            src="assets/images/testimonials/author1.png"
-                            alt="Author Image"
-                          />
-                        </div>
-                        <div className="author-info">
-                          <h4>James N. Johnson</h4>
-                          <span className="designation">CEO &amp; Founder</span>
-                        </div>
-                      </div>
-                      <div className="ratting style-two">
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star" />
-                        <i className="fas fa-star-half-alt" />
-                      </div>
+                      </div> */}
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -623,63 +690,7 @@ const About = () => {
       </section>
       {/* Testimonial Area end */}
       {/* Client Logo Two start */}
-      <section className="client-logo-area pt-130 rpt-100 pb-100 rpb-70">
-        <div className="container">
-          <div className="section-title text-center mb-60">
-            <h4>We Have 1520+Global Clients</h4>
-          </div>
-          <div className="client-logo-wrap">
-            <Link legacyBehavior href="/contact">
-              <a className="client-logo-item wow fadeInUp delay-0-2s">
-                <img
-                  src="assets/images/client-logos/client-logo1.png"
-                  alt="Client Logo"
-                />
-              </a>
-            </Link>
-            <Link legacyBehavior href="/contact">
-              <a className="client-logo-item wow fadeInUp delay-0-3s">
-                <img
-                  src="assets/images/client-logos/client-logo2.png"
-                  alt="Client Logo"
-                />
-              </a>
-            </Link>
-            <Link legacyBehavior href="/contact">
-              <a className="client-logo-item wow fadeInUp delay-0-4s">
-                <img
-                  src="assets/images/client-logos/client-logo3.png"
-                  alt="Client Logo"
-                />
-              </a>
-            </Link>
-            <Link legacyBehavior href="/contact">
-              <a className="client-logo-item wow fadeInUp delay-0-5s">
-                <img
-                  src="assets/images/client-logos/client-logo4.png"
-                  alt="Client Logo"
-                />
-              </a>
-            </Link>
-            <Link legacyBehavior href="/contact">
-              <a className="client-logo-item wow fadeInUp delay-0-6s">
-                <img
-                  src="assets/images/client-logos/client-logo5.png"
-                  alt="Client Logo"
-                />
-              </a>
-            </Link>
-            <Link legacyBehavior href="/contact">
-              <a className="client-logo-item wow fadeInUp delay-0-7s">
-                <img
-                  src="assets/images/client-logos/client-logo6.png"
-                  alt="Client Logo"
-                />
-              </a>
-            </Link>
-          </div>
-        </div>
-      </section>
+
     </Layout>
   );
 };
