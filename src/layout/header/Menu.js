@@ -115,7 +115,7 @@ const DaskTopMenu = () => {
         </Link>
       </li>
       <li>
-        <Link legacyBehavior href="contact">
+        <Link legacyBehavior href="start">
           Start up
         </Link>
       </li>
@@ -367,7 +367,7 @@ const MobileMenu = () => {
         </Link>
       </li>
       <li>
-        <Link legacyBehavior href="contact">
+        <Link legacyBehavior href="start">
           Start up
         </Link>
       </li>
