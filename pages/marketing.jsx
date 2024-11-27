@@ -1,16 +1,7 @@
 import YgencyAccordion from "@/src/components/YgencyAccordion";
 import Layout from "@/src/layout/Layout";
-import Link from "next/link";
-import { useState } from "react";
-import { Accordion } from "react-bootstrap";
+
 const ServiceDetails = () => {
-  const accordionData = [
-    { id: 1, title: "Will you provide website layout about design ?" },
-    { id: 2, title: "How much does cost to design website ?" },
-    { id: 3, title: "How many revisions can i make the design ?" },
-    { id: 4, title: "Will you provide website layout about design ?" },
-  ];
-  const [active, setActive] = useState("collapse0");
   return (
     <Layout header={5} footer={5} dark>
       {/* Page Banner Section Start */}

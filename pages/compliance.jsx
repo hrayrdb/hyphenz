@@ -1,10 +1,7 @@
 import YgencyAccordion from "@/src/components/YgencyAccordion";
 import Layout from "@/src/layout/Layout";
-import Link from "next/link";
-import { useState } from "react";
-import { Accordion } from "react-bootstrap";
+
 const ServiceDetails = () => {
-  const [active, setActive] = useState("collapse0");
   return (
     <Layout header={5} footer={5} dark>
       {/* Page Banner Section Start */}
