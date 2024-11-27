@@ -1,15 +1,13 @@
 import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 const Start = () => {
-  const [businessLocation, setBusinessLocation] = useState(""); // First dropdown
-  const [specificLocation, setSpecificLocation] = useState(""); // Second dropdown
-  const [options, setOptions] = useState([]); // Stores dynamic options for second dropdown
+  const [selectedType, setSelectedType] = useState(null);
+  const [options, setOptions] = useState([]);
 
   const emirateList = [
-    "I don’t Know!",
+    "I Don’t Know!",
     "Abu Dhabi",
     "Dubai",
     "Sharjah",
@@ -20,7 +18,7 @@ const Start = () => {
   ];
 
   const freezoneList = [
-    "I don’t Know!",
+    "I Don’t Know!",
     "Dubai South",
     "International Free Zone Authority",
     "Dubai Multi Commodities Center",
@@ -57,15 +55,12 @@ const Start = () => {
     "Fujairah Creative City",
   ];
 
-  // Handle first dropdown change
-  const handleBusinessLocationChange = (value) => {
-    setBusinessLocation(value);
-    setSpecificLocation(""); // Reset second dropdown
-    if (value === "Mainland") {
-      setOptions(emirateList); // Update options for Mainland
-    } else if (value === "Freezone") {
-      setOptions(freezoneList); // Update options for Freezone
-    }
+  const handleSelection = (type) => {
+
+
+    setSelectedType(type);
+
+    setOptions(type === "Mainland" ? emirateList : freezoneList);
   };
 
   return (
@@ -160,47 +155,40 @@ const Start = () => {
                         <div className="help-block with-errors" />
                       </div>
                     </div>
+                    {/* Business Location Type Selection */}
                     <div className="col-md-12 pb-25">
                       <div className="form-group">
                         <h6 className="pb-30 pt-30">Where do you want to start your business?</h6>
-                        <select
-                          name="businessLocation"
-                          id="business-location"
-                          className="form-control"
-                          value={businessLocation}
-                          onChange={(e) => handleBusinessLocationChange(e.target.value)}
-                          required
-                        >
-                          <option value="" disabled>
-                            Select
-                          </option>
-                          <option value="Mainland">Mainland</option>
-                          <option value="Freezone">Freezone</option>
-                        </select>
+                        <div className="d-flex justify-content-center  gap-3">
+                          <button
+                            type="button"
+                            className={`btn ${selectedType === "Mainland" ? "btn-primary" : "btn-outline-primary"}`}
+                            onClick={() => handleSelection("Mainland")}
+                            style={{ fontSize: "25px" }}
+                          >
+                            Mainland
+                          </button>
+                          <button
+                            type="button"
+                            className={`btn ${selectedType === "Freezone" ? "btn-primary" : "btn-outline-primary"}`}
+                            onClick={() => handleSelection("Freezone")}
+                            style={{ fontSize: "25px" }}
+                          >
+                            Freezone
+                          </button>
+                        </div>
                       </div>
                     </div>
-
-
-                    {/* Second Dynamic Dropdown */}
-                    {businessLocation && (
+                    {/* Dynamic Dropdown */}
+                    {selectedType && (
                       <div className="col-md-12 pb-25">
                         <div className="form-group">
-                          <h6 className="pb-30 pt-30">
-                            {businessLocation === "Mainland"
-                              ? "Select Emirate"
-                              : "Select Free Zone"}
-                          </h6>
+                          <h6 className="pb-30 pt-30">Select a location</h6>
                           <select
-                            name="specificLocation"
-                            id="specific-location"
-                            className="form-control"
-                            value={specificLocation}
-                            onChange={(e) => setSpecificLocation(e.target.value)}
-                            required
+                            name="businessLocation"
+                            id="business-location"
+                            className="select-dropdown"
                           >
-                            <option value="" disabled>
-                              Select
-                            </option>
                             {options.map((option, index) => (
                               <option key={index} value={option}>
                                 {option}
@@ -210,7 +198,6 @@ const Start = () => {
                         </div>
                       </div>
                     )}
-
                     <div className="col-md-12 pb-25">
                       <div className="form-group">
                         <h6 className="pb-30 pt-30">What kind of activity do you want?</h6>
