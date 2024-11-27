@@ -59,7 +59,7 @@ const ServiceDetails = () => {
             <div className="col-xl-5 col-lg-6 mx-xl-auto">
               <div className="about-content wow fadeInUp delay-0-4s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-15">Company Formations</span>
+                  <span className="sub-title mb-15">Financial Services</span>
                   <h2>Accounting & Bookkeeping</h2>
                 </div>
                 <div className="content">
@@ -114,7 +114,7 @@ const ServiceDetails = () => {
             <div className="col-xl-5 col-lg-6 mx-xl-auto">
               <div className="about-content wow fadeInUp delay-0-4s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-15">Company Formations</span>
+                  <span className="sub-title mb-15">Financial Services</span>
                   <h2>VAT Registration & Consultation</h2>
                 </div>
                 <div className="content">
@@ -171,7 +171,7 @@ const ServiceDetails = () => {
             <div className="col-xl-5 col-lg-6 mx-xl-auto">
               <div className="about-content wow fadeInUp delay-0-4s">
                 <div className="section-title mb-40">
-                  <span className="sub-title mb-15">Company Formations</span>
+                  <span className="sub-title mb-15">Financial Services</span>
                   <h2>Corporate Tax Registration & Consultation</h2>
                 </div>
                 <div className="content">
