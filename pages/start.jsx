@@ -1,77 +1,87 @@
 import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
-const Contact = () => {
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+const Start = () => {
+  const [businessLocation, setBusinessLocation] = useState(""); // First dropdown
+  const [specificLocation, setSpecificLocation] = useState(""); // Second dropdown
+  const [options, setOptions] = useState([]); // Stores dynamic options for second dropdown
+
+  const emirateList = [
+    "I don’t Know!",
+    "Abu Dhabi",
+    "Dubai",
+    "Sharjah",
+    "Ajman",
+    "Umm Al Quwain",
+    "Fujairah",
+    "Ras Al Khaimah",
+  ];
+
+  const freezoneList = [
+    "I don’t Know!",
+    "Dubai South",
+    "International Free Zone Authority",
+    "Dubai Multi Commodities Center",
+    "Sharjah Airport Intl Free Zone",
+    "Sharjah Media City",
+    "Ras Al Khaimah Economic Zone",
+    "Umm Al Quwain Free Trade Zone",
+    "Dubai Airport Free Zone",
+    "Dubai World Trade Centre",
+    "Dubai Silicon Oasis",
+    "Jebel Ali Free Zone",
+    "Abu Dhabi Airport Free Zone",
+    "Khalifa Industrial Zone Abu Dhabi (KIZAD)",
+    "Abu Dhabi Global Market",
+    "Twofour54",
+    "Industrial City of Abu Dhabi",
+    "Dubai Internet City",
+    "Dubai Academic City",
+    "Dubai Biotech Research Park",
+    "Dubai Design District",
+    "Gold and Diamond Park",
+    "Dubai Healthcare City",
+    "Dubai Industrial City",
+    "Dubai International Financial Centre",
+    "Dubai Knowledge Village",
+    "Dubai Media City",
+    "Dubai Outsource Zone",
+    "Dubai Studio City",
+    "Dubai Techno Park",
+    "International Media Production Zone",
+    "Hamriyah Free Zone",
+    "Ajman Free Zone",
+    "Fujairah Free Zone",
+    "Fujairah Creative City",
+  ];
+
+  // Handle first dropdown change
+  const handleBusinessLocationChange = (value) => {
+    setBusinessLocation(value);
+    setSpecificLocation(""); // Reset second dropdown
+    if (value === "Mainland") {
+      setOptions(emirateList); // Update options for Mainland
+    } else if (value === "Freezone") {
+      setOptions(freezoneList); // Update options for Freezone
+    }
+  };
+
   return (
-    <Layout dark>
+    <Layout header={5} footer={5} dark>
       {/* Page Banner Start */}
-      <PageBanner pageName={"Contact"} />
+      <PageBanner pageName={"Start"} />
       {/* Page Banner End */}
       {/* Contact Form Area start */}
       <section className="contact-page-area py-130 rpy-100 rel z-1">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-lg-6">
-              <div className="our-location-part rmb-55 wow fadeInUp delay-0-2s">
-                <div className="row">
-                  <div className="col-xl-10">
-                    <div className="section-title mb-60">
-                      <span className="sub-title mb-15">Contact Us</span>
-                      <h2>Ready to Work Your Next Projects</h2>
-                    </div>
-                  </div>
-                </div>
-                <div className="row gap-80 pb-30">
-                  <div className="col-sm-6">
-                    <div className="our-location-address mb-40">
-                      <h5>New York</h5>
-                      <p>
-                        55 One State Road, 2nd Block New York, United States
-                      </p>
-                      <a className="mailto" href="mailto:support@gmail.com">
-                        support@gmail.com
-                      </a>
-                      <br />
-                      <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +000 (123) 456 88
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="our-location-address mb-40">
-                      <h5>Australia</h5>
-                      <p>67 One State Road, 2nd Block Melbourne, Australia</p>
-                      <a className="mailto" href="mailto:support@gmail.com">
-                        support@gmail.com
-                      </a>
-                      <br />
-                      <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +000 (123) 456 88
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <h4>Follow Us</h4>
-                <div className="social-style-two pt-15">
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-5 col-lg-6">
+            <div>
               <div className="contact-page-form form-style-one wow fadeInUp delay-0-2s">
                 <div className="section-title mb-35">
-                  <span className="sub-title mb-15">Get Free Quote</span>
-                  <h3>Drop Us a Message</h3>
+                  <span className="sub-title mb-15">Fill The Form</span>
+                  <h3>Start Form</h3>
                 </div>
                 <form
                   id="contactForm"
@@ -91,7 +101,6 @@ const Contact = () => {
                           id="name"
                           name="name"
                           className="form-control"
-                          defaultValue
                           placeholder="Full Name"
                           required
                           data-error="Please enter your name"
@@ -109,7 +118,6 @@ const Contact = () => {
                           id="phone_number"
                           name="phone_number"
                           className="form-control"
-                          defaultValue
                           placeholder="Phone"
                           required
                           data-error="Please enter your Number"
@@ -127,7 +135,6 @@ const Contact = () => {
                           id="email"
                           name="email"
                           className="form-control"
-                          defaultValue
                           placeholder="Email Address"
                           required
                           data-error="Please enter your Email Address"
@@ -153,13 +160,202 @@ const Contact = () => {
                         <div className="help-block with-errors" />
                       </div>
                     </div>
+                    <div className="col-md-12 pb-25">
+                      <div className="form-group">
+                        <h6 className="pb-30 pt-30">Where do you want to start your business?</h6>
+                        <select
+                          name="businessLocation"
+                          id="business-location"
+                          className="form-control"
+                          value={businessLocation}
+                          onChange={(e) => handleBusinessLocationChange(e.target.value)}
+                          required
+                        >
+                          <option value="" disabled>
+                            Select
+                          </option>
+                          <option value="Mainland">Mainland</option>
+                          <option value="Freezone">Freezone</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                    {/* Second Dynamic Dropdown */}
+                    {businessLocation && (
+                      <div className="col-md-12 pb-25">
+                        <div className="form-group">
+                          <h6 className="pb-30 pt-30">
+                            {businessLocation === "Mainland"
+                              ? "Select Emirate"
+                              : "Select Free Zone"}
+                          </h6>
+                          <select
+                            name="specificLocation"
+                            id="specific-location"
+                            className="form-control"
+                            value={specificLocation}
+                            onChange={(e) => setSpecificLocation(e.target.value)}
+                            required
+                          >
+                            <option value="" disabled>
+                              Select
+                            </option>
+                            {options.map((option, index) => (
+                              <option key={index} value={option}>
+                                {option}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="col-md-12 pb-25">
+                      <div className="form-group">
+                        <h6 className="pb-30 pt-30">What kind of activity do you want?</h6>
+                        <select
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          required
+                          data-error="Please select an option"
+                        >
+                          <option value="" disabled selected>
+                            Select
+                          </option>
+                          <option value="Agriculture">Agriculture</option>
+                          <option value="Industry / Manufacturing">Industry / Manufacturing</option>
+                          <option value="Trade & Commerce">Trade & Commerce</option>
+                          <option value="Finance">Finance</option>
+                          <option value="Vocational / Craftsman">Vocational / Craftsman</option>
+                          <option value="Real estate">Real estate</option>
+                          <option value="Contracting">Contracting</option>
+                          <option value="Facility Management">Facility Management</option>
+                          <option value="Interior Design">Interior Design</option>
+                          <option value="Tourism">Tourism</option>
+                          <option value="Education">Education</option>
+                          <option value="Health">Health</option>
+                          <option value="Sports">Sports</option>
+                          <option value="Art">Art</option>
+                          <option value="Technology">Technology</option>
+                        </select>
+                        <div className="help-block with-errors" />
+                      </div>
+                    </div>
+
+                    <div className="col-md-12  pb-25">
+                      <div className="form-group">
+                        <h6 className="pb-30 pt-30">What is the Legal type of the company?</h6>
+                        <select
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          required
+                          data-error="Please select an option"
+                        >
+                          <option value="" disabled selected>
+                            Select
+                          </option>
+                          <option value="Limited Liability Company">Limited Liability Company</option>
+                          <option value="Sole Establishment">Sole Establishment</option>
+                          <option value="Public Joint Stock Company">Public Joint Stock Company</option>
+                          <option value="Private Joint Stock Company">Private Joint Stock Company</option>
+                          <option value="I don’t know.">I don’t know.</option>
+                        </select>
+                        <div className="help-block with-errors" />
+                      </div>
+                    </div>
+                    <div className="col-md-12 pb-25">
+                      <div className="form-group">
+                        <h6 className="pb-30 pt-30">What is the number of partners, including you?</h6>
+
+                        <select
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          required
+                          data-error="Please select an option"
+                        >
+                          <option value="" disabled selected>
+                            Select
+                          </option>
+                          <option value="1-3">1-3</option>
+                          <option value="4-7">4-7</option>
+                          <option value="8-10">8-10</option>
+                        </select>
+                        <div className="help-block with-errors" />
+                      </div>
+                    </div>
+                    <div className="col-md-12 pb-25">
+                      <div className="form-group">
+                        <h6 className="pb-30 pt-30">Are there any UAE or GCC nationals?</h6>
+
+                        <select
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          required
+                          data-error="Please select an option"
+                        >
+                          <option value="" disabled selected>
+                            Select
+                          </option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                        <div className="help-block with-errors" />
+                      </div>
+                    </div>
+                    <div className="col-md-12 pb-25">
+                      <div className="form-group">
+                        <h6 className="pb-30 pt-30">Where do you plan to offer your service?</h6>
+
+                        <select
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          required
+                          data-error="Please select an option"
+                        >
+                          <option value="" disabled selected>
+                            Select
+                          </option>
+                          <option value="Within the UAE">Within the UAE</option>
+                          <option value="Outside the UAE">Outside the UAE</option>
+                          <option value="Both">Both</option>
+
+                        </select>
+                        <div className="help-block with-errors" />
+                      </div>
+                    </div>
+                    <div className="col-md-12 pb-25">
+                      <div className="form-group">
+                        <h6 className="pb-30 pt-30">Do you already have a logo/brand?</h6>
+
+                        <select
+                          name="message"
+                          id="message"
+                          className="form-control"
+                          required
+                          data-error="Please select an option"
+                        >
+                          <option value="" disabled selected>
+                            Select
+                          </option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                        <div className="help-block with-errors" />
+                      </div>
+                    </div>
                     <div className="col-md-12">
                       <div className="form-group pt-5 mb-0">
                         <button
                           type="submit"
                           className="theme-btn style-two w-100"
                         >
-                          Send Message us <i className="far fa-arrow-right" />
+                          Send<i className="far fa-arrow-right" />
                         </button>
                         <div id="msgSubmit" className="hidden" />
                       </div>
@@ -177,7 +373,7 @@ const Contact = () => {
         <div className="container-fluid">
           <div className="our-location">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8565.603663566713!2d55.280789!3d25.185381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68307f7362d5%3A0x1d59e201dc69f737!2sBay%20Square%2010!5e1!3m2!1sen!2sus!4v1732612473918!5m2!1sen!2sus"
               style={{ border: 0, width: "100%" }}
               allowFullScreen
               loading="lazy"
@@ -191,4 +387,4 @@ const Contact = () => {
     </Layout>
   );
 };
-export default Contact;
+export default Start;

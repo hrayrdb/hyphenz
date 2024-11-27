@@ -4,7 +4,7 @@ const PageBanner = ({ pageName }) => {
   // Define background images for different pages
   const backgroundImages = {
     Faqs: "url(assets/images/banner/faqs.webp)",
-    About: "url(assets/images/banner/about.webp)",
+    Start: "url(assets/images/banner/Start.webp)",
     Services: "url(assets/images/banner/services.webp)",
     Contact: "url(assets/images/banner/contact.webp)",
     Default: "url(assets/images/banner/default.webp)", // Default image if no match
