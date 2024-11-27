@@ -20,7 +20,7 @@ const E404 = () => {
                     Go to Home <i className="far fa-arrow-right" />
                   </a>
                 </Link>
-                <div className="social-style-four d-flex mt-60 rmt-35">
+                {/* <div className="social-style-four d-flex mt-60 rmt-35">
                   <a href="#">
                     <i className="fab fa-facebook-f" /> <span>Facebook</span>
                   </a>
@@ -30,13 +30,13 @@ const E404 = () => {
                   <a href="#">
                     <i className="fab fa-dribbble" /> <span>Dribbble</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-7">
               <div className="error-image wow zoomIn delay-0-2s">
                 <img
-                  src="assets/images/background/404-error.png"
+                  src="assets/images/background/404-error.webp"
                   alt="404 Error"
                 />
               </div>
