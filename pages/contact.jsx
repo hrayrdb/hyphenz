@@ -4,10 +4,30 @@ const Contact = () => {
   return (
     <Layout header={5} footer={5} dark>
       {/* Page Banner Start */}
-      <PageBanner pageName={"Contact"} />
+      {/* <PageBanner pageName={"Contact"} /> */}
       {/* Page Banner End */}
+
+      <section
+        className="page-banner pt-210 rpt-150 pb-75 rpb-70 rel z-1"
+        style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
+                Contact
+                <img
+                  className="mxw-10 leaf"
+                  src="assets/images/banner/leaf.png"
+                  alt="Leaf"
+                />
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Contact Form Area start */}
-      <section className="contact-page-area py-130 rpy-100 rel z-1">
+      <section className="contact-page-area py-80 rpy-80 rel z-1">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-6">
@@ -30,7 +50,7 @@ const Contact = () => {
                       </a>
                       <br />
                       <a className="callto" href="callto:+971543901172">
-                        <i className="fas fa-phone" /> +971 54 390 1172
+                        <i className="fas fa-phone" style={{ color: "#171717" }} /> +971 54 390 1172
                       </a>
                     </div>
                   </div>
@@ -56,7 +76,7 @@ const Contact = () => {
               <div className="contact-page-form form-style-one wow fadeInUp delay-0-2s">
                 <div className="section-title mb-35">
                   <span className="sub-title mb-15">Fill The Form</span>
-                  <h3>Drop Us a Message</h3>
+                  <h3 className="text-white">Drop Us a Message</h3>
                 </div>
                 <form
                   id="contactForm"
@@ -155,7 +175,7 @@ const Contact = () => {
       </section>
       {/* Contact Form Area end */}
       {/* Location Map Area Start */}
-      <div className="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
+      <div className="contact-page-map wow fadeInUp delay-0-2s">
         <div className="container-fluid">
           <div className="our-location">
             <iframe

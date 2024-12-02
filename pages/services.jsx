@@ -7,7 +7,7 @@ const Services = () => {
     <Layout header={5} footer={5} dark>
       {/* Page Banner Section Start */}
       <section
-        className="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"
+        className="page-banner pt-210 rpt-150 pb-75 rpb-70 rel z-1"
         style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
       >
         <div className="container">
@@ -43,7 +43,8 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/company-formations">
-                      <a>Company Formations & Associated Services</a>
+                      <a style={{ color: "var(--ygency-secondary-color)" }}>
+                        Company Formations & Associated Services</a>
                     </Link>
                   </h4>
                   <p>
@@ -65,7 +66,8 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/financial-services">
-                      Financial Services
+                      <a style={{ color: "var(--ygency-secondary-color)" }}>
+                        Financial Services </a>
                     </Link>
                   </h4>
                   <p>
@@ -87,7 +89,9 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/legal-advisory">
-                      Legal Advisory
+                      <a style={{ color: "var(--ygency-secondary-color)" }}>
+                        Legal Advisory
+                      </a>
                     </Link>
                   </h4>
                   <p>
@@ -109,7 +113,8 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/service-details">
-                      Compliance & AML/CFT
+                      <a style={{ color: "var(--ygency-secondary-color)" }}>
+                        Compliance & AML/CFT </a>
                     </Link>
                   </h4>
                   <p>
@@ -131,7 +136,8 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/marketing">
-                      <a>Marketing</a>
+                      <a style={{ color: "var(--ygency-secondary-color)" }}>
+                        Marketing</a>
                     </Link>
                   </h4>
                   <p>
@@ -153,7 +159,8 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/commercial-office">
-                      Commercial Office
+                      <a style={{ color: "var(--ygency-secondary-color)" }}>
+                        Commercial Office </a>
                     </Link>
                   </h4>
                   <p>
@@ -175,7 +182,8 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/website-design">
-                      Website Design
+                      <a style={{ color: "var(--ygency-secondary-color)" }}>
+                        Website Design </a>
                     </Link>
                   </h4>
                   <p>
@@ -197,7 +205,8 @@ const Services = () => {
                 <div className="content">
                   <h4>
                     <Link legacyBehavior href="/it-solutions">
-                      IT Solutions
+                      <a style={{ color: "var(--ygency-secondary-color)" }}>
+                        IT Solutions </a>
                     </Link>
                   </h4>
                   <p>
@@ -211,7 +220,7 @@ const Services = () => {
       </section>
       {/* Feature Three Area end */}
       {/* Headline area start */}
-      <div className="headline-area bgc-primary pt-80 pb-65">
+      <div className="headline-area bgc-gray pt-80 pb-65">
         <div className="container-fluid">
           <div className="headline-wrap marquee">
             <span>
@@ -261,7 +270,7 @@ const Services = () => {
                 <span className="step-number">Step 01</span>
                 <h4 className="title">Initiation</h4>
                 <div className="content">
-                  <p>Project start and feasibility.</p>
+                  <p className="text-white">Project start <br />and feasibility.</p>
                 </div>
               </div>
             </div>
@@ -270,7 +279,7 @@ const Services = () => {
                 <span className="step-number">Step 02</span>
                 <h4 className="title">Planning</h4>
                 <div className="content">
-                  <p>Strategy and roadmap creation.</p>
+                  <p className="text-white">Strategy and roadmap creation.</p>
                 </div>
               </div>
             </div>
@@ -279,7 +288,7 @@ const Services = () => {
                 <span className="step-number">Step 03</span>
                 <h4 className="title">Execution</h4>
                 <div className="content">
-                  <p>Delivering the project outputs.</p>
+                  <p className="text-white">Delivering the project outputs.</p>
                 </div>
               </div>
             </div>
@@ -288,7 +297,7 @@ const Services = () => {
                 <span className="step-number">Step 04</span>
                 <h4 className="title">Closure</h4>
                 <div className="content">
-                  <p>Completing and closing the project.</p>
+                  <p className="text-white">Completing and closing the project.</p>
                 </div>
               </div>
             </div>

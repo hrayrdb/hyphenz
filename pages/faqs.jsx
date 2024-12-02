@@ -135,10 +135,31 @@ const Faqs = () => {
   return (
     <Layout dark header={5} footer={5}>
       {/* Page Banner Start */}
-      <PageBanner pageName={"Faqs"} />
+      {/* <PageBanner pageName={"Faqs"} /> */}
       {/* Page Banner End */}
+
+      <section
+        className="page-banner pt-210 rpt-150 pb-75 rpb-70 rel z-1"
+        style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
+                FAQS
+                <img
+                  className="mxw-10 leaf"
+                  src="assets/images/banner/leaf.png"
+                  alt="Leaf"
+                />
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ's Area start */}
-      <section className="faq-area pt-130 rpt-100 pb-130 rpb-75 rel z-1">
+      <section className="faq-area pt-100 rpt-100 pb-70 rpb-35 rel z-1">
         <div className="container">
           <div className="row align-items-center">
             <div>
@@ -173,13 +194,13 @@ const Faqs = () => {
         </div>
       </section>
       {/* FAQ's Area end */}
-      <section className="contact-area py-130 rpy-100 rel z-1">
+      <section className="contact-page-form form-style-one py-50 rpy-50 rel z-1">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-9">
               <div className="section-title mb-50 text-center wow fadeInUp delay-0-2s">
                 <span className="sub-title mb-15">Contact Us</span>
-                <h2>Let’s Work Together For Your Next Venture</h2>
+                <h2 className="text-white">Let’s Work Together For Your Next Venture</h2>
               </div>
             </div>
             <div className="col-xl-10 col-lg-11">

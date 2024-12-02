@@ -66,17 +66,37 @@ const Start = () => {
   return (
     <Layout header={5} footer={5} dark>
       {/* Page Banner Start */}
-      <PageBanner pageName={"Start"} />
+      {/* <PageBanner pageName={"Start"} /> */}
       {/* Page Banner End */}
+      {/* Page Banner Section Start */}
+      <section
+        className="page-banner pt-210 rpt-150 pb-25 rel z-1"
+        style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <h1 className="hero-title mb-30 rmb-30 wow fadeInUp delay-0-2s">
+                Start - Up 
+                <img
+                  className="mxw-10 leaf"
+                  src="assets/images/banner/leaf.png"
+                  alt="Leaf"
+                />
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Contact Form Area start */}
-      <section className="contact-page-area py-130 rpy-100 rel z-1">
+      <section className="contact-page-area py-70 rpy-50 rel z-1">
         <div className="container">
           <div className="row justify-content-between">
             <div>
               <div className="contact-page-form form-style-one wow fadeInUp delay-0-2s">
                 <div className="section-title mb-35">
                   <span className="sub-title mb-15">Fill The Form</span>
-                  <h3>Start Form</h3>
+                  <h3 className="text-white">Start Form</h3>
                 </div>
                 <form
                   id="contactForm"
@@ -158,7 +178,7 @@ const Start = () => {
                     {/* Business Location Type Selection */}
                     <div className="col-md-12 pb-25">
                       <div className="form-group">
-                        <h6 className="pb-30 pt-30">Where do you want to start your business?</h6>
+                        <h6 className="pb-30 pt-30 text-white">Where do you want to start your business?</h6>
                         <div className="d-flex justify-content-center  gap-3">
                           <button
                             type="button"
@@ -183,7 +203,7 @@ const Start = () => {
                     {selectedType && (
                       <div className="col-md-12 pb-25">
                         <div className="form-group">
-                          <h6 className="pb-30 pt-30">Select a location</h6>
+                          <h6 className="pb-30 pt-30 text-white">Select a location</h6>
                           <select
                             name="businessLocation"
                             id="business-location"
@@ -200,7 +220,7 @@ const Start = () => {
                     )}
                     <div className="col-md-12 pb-25">
                       <div className="form-group">
-                        <h6 className="pb-30 pt-30">What kind of activity do you want?</h6>
+                        <h6 className="pb-30 pt-30 text-white">What kind of activity do you want?</h6>
                         <select
                           name="message"
                           id="message"
@@ -233,7 +253,7 @@ const Start = () => {
 
                     <div className="col-md-12  pb-25">
                       <div className="form-group">
-                        <h6 className="pb-30 pt-30">What is the Legal type of the company?</h6>
+                        <h6 className="pb-30 pt-30 text-white">What is the Legal type of the company?</h6>
                         <select
                           name="message"
                           id="message"
@@ -255,7 +275,7 @@ const Start = () => {
                     </div>
                     <div className="col-md-12 pb-25">
                       <div className="form-group">
-                        <h6 className="pb-30 pt-30">What is the number of partners, including you?</h6>
+                        <h6 className="pb-30 pt-30 text-white">What is the number of partners, including you?</h6>
 
                         <select
                           name="message"
@@ -276,7 +296,7 @@ const Start = () => {
                     </div>
                     <div className="col-md-12 pb-25">
                       <div className="form-group">
-                        <h6 className="pb-30 pt-30">Are there any UAE or GCC nationals?</h6>
+                        <h6 className="pb-30 pt-30 text-white">Are there any UAE or GCC nationals?</h6>
 
                         <select
                           name="message"
@@ -296,7 +316,7 @@ const Start = () => {
                     </div>
                     <div className="col-md-12 pb-25">
                       <div className="form-group">
-                        <h6 className="pb-30 pt-30">Where do you plan to offer your service?</h6>
+                        <h6 className="pb-30 pt-30 text-white">Where do you plan to offer your service?</h6>
 
                         <select
                           name="message"
@@ -318,7 +338,7 @@ const Start = () => {
                     </div>
                     <div className="col-md-12 pb-25">
                       <div className="form-group">
-                        <h6 className="pb-30 pt-30">Do you already have a logo/brand?</h6>
+                        <h6 className="pb-30 pt-30 text-white">Do you already have a logo/brand?</h6>
 
                         <select
                           name="message"
@@ -356,7 +376,7 @@ const Start = () => {
       </section>
       {/* Contact Form Area end */}
       {/* Location Map Area Start */}
-      <div className="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
+      <div className="contact-page-map wow fadeInUp delay-0-2s">
         <div className="container-fluid">
           <div className="our-location">
             <iframe

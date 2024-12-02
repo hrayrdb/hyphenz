@@ -32,11 +32,11 @@ export default class Home5Slider extends Component {
             >
               <div className="container">
                 <div className="slide-content">
-                  <span className="sub-title">Project Management Services</span>
+                  <span className="sub-title" style={{ color: "#0d4a6d" }}>Consultency Firm</span>
                   <h2>
                     HYPHENZ,
                     <br />
-                    <span>Unlocking Possibilities Together</span>
+                    <span style={{ fontSize: "clamp(20px, 2.5vw, 40px)" }}>Unlocking Possibilities Together.</span>
 
                   </h2>
                   <hr />
@@ -54,7 +54,7 @@ export default class Home5Slider extends Component {
                     <Link href="start" className="theme-btn style-two">
                       Start Your Venture Now <i className="far fa-arrow-right" />
                     </Link>
-                    <Link className="contact" href="services">
+                    <Link className="theme-btn style-two" style={{ background: "#e5e5e5" }} href="services">
                       Existing Business <i className="far fa-arrow-right" />
                     </Link>
                   </div>

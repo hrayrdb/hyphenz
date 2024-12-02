@@ -14,7 +14,7 @@ const index5 = () => {
       <Home5Slider />
       {/* Slider Section End */}
       {/* Service Box start */}
-      <section className="what-we-offer pt-120 pb-90 rpb-70">
+      <section className="what-we-offer pt-40 pb-10 rpb-10">
         <div className="container container-1290">
           <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-20">What We offer</span>
@@ -144,6 +144,74 @@ const index5 = () => {
           </div>
         </div>
       </section>
+
+      {/* <section className="what-we-offer pt-90 pb-90 rpb-70">
+        <div className="container container-1290">
+          <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+            <span className="sub-title mb-20">What We Offer</span>
+            <h2>Services We Provide</h2>
+          </div>
+          <div className="row services-grid">
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="service-item style-three wow fadeInUp delay-0-2s">
+                <div className="icon">
+                  <i className="flaticon-branding" />
+                </div>
+                <div className="number">01</div>
+                <h4>
+                  <Link href="company-formations">Company Formations</Link>
+                </h4>
+                <Link href="company-formations" className="more">
+                  <i className="far fa-arrow-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="service-item style-three wow fadeInUp delay-0-2s">
+                <div className="icon">
+                  <i className="flaticon-liquid" />
+                </div>
+                <div className="number">02</div>
+                <h4>
+                  <Link href="financial-services">Financial <br /> Services</Link>
+                </h4>
+                <Link href="financial-services" className="more">
+                  <i className="far fa-arrow-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="service-item style-three wow fadeInUp delay-0-2s">
+                <div className="icon">
+                  <i className="flaticon-goal" />
+                </div>
+                <div className="number">03</div>
+                <h4>
+                  <Link href="legal-advisory">Legal <br /> Advisory</Link>
+                </h4>
+                <Link href="legal-advisory" className="more">
+                  <i className="far fa-arrow-right" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="service-item style-three wow fadeInUp delay-0-2s">
+                <div className="icon">
+                  <i className="flaticon-robot-arm" />
+                </div>
+                <div className="number">04</div>
+                <h4>
+                  <Link href="compliance">Compliance & AML/CFT</Link>
+                </h4>
+                <Link href="compliance" className="more">
+                  <i className="far fa-arrow-right" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
       {/* Service Box end */}
       {/* About Us Area start */}
       <section className="about-area-five py-130 rpy-100 rel z-1">
@@ -198,12 +266,12 @@ const index5 = () => {
       </section>
       {/* About Us Area end */}
       {/* Client Logo Two start */}
-      <div className="client-logo-area pt-120 pb-90 rpt-100 rpb-70">
+      <div className="client-logo-area pt-50 pb-20 rpt-50 rpb-20">
         <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
           <span className="sub-title mb-20">Check out</span>
           <h2>Our Partners</h2>
         </div>
-        <div className="container">
+        {/* <div className="container">
           <div className="client-logo-wrap">
             <Link
               className="client-logo-item wow fadeInUp delay-0-2s"
@@ -232,35 +300,8 @@ const index5 = () => {
                 alt="REE"
               />
             </Link>
-            {/* <Link
-              className="client-logo-item wow fadeInUp delay-0-5s"
-              href="contact"
-            >
-              <img
-                src="assets/images/client-logos/client-logo4.png"
-                alt="Client Logo"
-              />
-            </Link> */}
-            {/* <Link
-              className="client-logo-item wow fadeInUp delay-0-6s"
-              href="contact"
-            >
-              <img
-                src="assets/images/client-logos/client-logo5.png"
-                alt="Client Logo"
-              />
-            </Link> */}
-            {/* <Link
-              className="client-logo-item wow fadeInUp delay-0-7s"
-              href="contact"
-            >
-              <img
-                src="assets/images/client-logos/client-logo6.png"
-                alt="Client Logo"
-              />
-            </Link> */}
           </div>
-        </div>
+        </div> */}
       </div>
       {/* Client Logo Two end */}
       {/* Work Gallery Area start */}
@@ -462,28 +503,51 @@ const index5 = () => {
       </section> */}
       {/* Work Gallery Area end */}
       {/* Counter Five start */}
-      <div className="counter-section-five pb-60 rpb-50">
-        <div className="container container-1290">
-          <div className="row">
-            <div className="col-xl-4 col-md-6">
+      <div className="counter-section-five">
+        <div className="container container-1620">
+          <div className="row justify-content-center" style={{ display: "flex", gap: "1rem" }}>
+            <div className="col-xl-3 col-md-6" style={{ backgroundColor: "#0a1019", padding: "0" }}>
               <div className="counter-item-three style-two counter-text-wrap wow fadeInRight delay-0-2s">
                 <i className="flaticon-abstract" />
-                <Counter end={100} />
-                <span className="counter-title">% <br /> Integrity</span>
+                <Link
+                  className="client-logo-item wow fadeInUp delay-0-3s"
+                  href="https://ad-tempo.com/"
+                >
+                  <img
+                    src="assets/images/client-logos/adtempo.png"
+                    alt="AdTempo"
+                  />
+                </Link>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6">
+            <div className="col-xl-3 col-md-6" style={{ backgroundColor: "#0a1019", padding: "0" }}>
               <div className="counter-item-three style-two counter-text-wrap wow fadeInRight delay-0-4s">
                 <i className="flaticon-abstract" />
-                <Counter end={100} />
-                <span className="counter-title">% <br /> Confidentiality</span>
+                <Link
+                  className="client-logo-item wow fadeInUp delay-0-2s"
+                  href="https://premier-ecfm.ae/"
+                >
+                  <img
+                    src="assets/images/client-logos/premier.png"
+                    alt="Premier"
+                  />
+                </Link>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6">
+            <div className="col-xl-3 col-md-6" style={{ backgroundColor: "#0a1019", padding: "0" }}>
               <div className="counter-item-three style-two counter-text-wrap wow fadeInRight delay-0-6s">
                 <i className="flaticon-abstract" />
-                <Counter end={100} />
-                <span className="counter-title">% <br />Professionalism</span>
+                {/* <Counter end={100} />
+                <span className="counter-title">% <br />Professionalism</span> */}
+                <Link
+                  className="client-logo-item wow fadeInUp delay-0-4s"
+                  href="https://www.raseelrealestate.ae/"
+                >
+                  <img
+                    src="assets/images/client-logos/RRE.png"
+                    alt="REE"
+                  />
+                </Link>
               </div>
             </div>
           </div>
@@ -758,13 +822,13 @@ const index5 = () => {
         </div>
       </section> */}
 
-      <section className="team-area pt-130 rpt-100 pb-100 rpb-70">
+      <section className="team-area pt-50 rpt-50 pb-50 rpb-30">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9">
               <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
                 <span className="sub-title mb-20">
-                  We can help you with the processes in the following government departments
+                  We can help you in the following
                 </span>
                 <h2>Government Departments</h2>
               </div>
@@ -1071,7 +1135,8 @@ const index5 = () => {
           <div className="row no-gap">
             <div className="col-xl-5 align-self-center">
               <div className="work-with-image wow fadeInUp delay-0-2s">
-                <img src="assets/images/about/bay-square.webp" alt="Picture" />
+                {/* <img src="assets/images/about/bay-square.webp" alt="Picture" /> */}
+                <img src="assets/images/slider/road.webp" alt="Picture" />
               </div>
             </div>
             <div className="col-xl-7 wow fadeInUp delay-0-4s">
@@ -1079,7 +1144,7 @@ const index5 = () => {
                 className="work-with-content"
                 style={{
                   backgroundImage:
-                    "url(assets/images/about/burjalarab.webp)",
+                    "url(assets/images/slider/slide3.webp)",
                 }}
               >
                 <div className="section-title mb-10">

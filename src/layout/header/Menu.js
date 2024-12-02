@@ -19,7 +19,7 @@ export default Menu;
 
 const DaskTopMenu = () => {
   return (
-    <ul className="navigation d-none d-lg-flex desktop-menu">
+    <ul className="navigation d-none d-lg-flex desktop-menu" >
       <li className="dropdown">
         <a href="/">Home</a>
         {/* <ul>

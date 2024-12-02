@@ -100,7 +100,7 @@ import Link from "next/link";
 const Footer5 = ({ dark }) => {
   return (
     <footer className="main-footer footer-five pt-100">
-      <div className="container container-1290 pb-40">
+      <div className="container container-1290 pb-3">
         <div className="row justify-content-between">
           <div className="col-lg-4">
             <div className="footer-widget footer-about wow fadeInUp delay-0-2s">
@@ -139,7 +139,7 @@ const Footer5 = ({ dark }) => {
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="footer-widget footer-navigation wow fadeInUp delay-0-6s">
-              <h4 className="footer-title">Site Navigation</h4>
+              <h4 className="footer-title" style={{ color: "#ffffff" }}>Site Navigation</h4>
               <ul className="footer-menu">
                 <li>
                   <Link href="/">Home</Link>
@@ -164,11 +164,11 @@ const Footer5 = ({ dark }) => {
           </div>
         </div>
       </div>
-      <div className="copyright-area pt-25 pb-15">
+      <div className="copyright-area pt-15 pb-15">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <div className="footer-copyright-text wow fadeInUp delay-0-2s">
+              <div className="footer-copyright-text text-white wow fadeInUp delay-0-2s">
                 <p>
                   © 2024 Hyphenz for Project Management Services – All Rights
                   Reserved.

@@ -5,7 +5,7 @@ import NavSearch from "./NavSearch";
 const Header5 = ({ singleMenu, dark }) => {
   return (
     <header className="main-header menu-absolute header-two">
-      <div className="header-top bgc-primary">
+      {/* <div className="header-top bgc-gray">
         <div className="container container-1620">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -14,9 +14,6 @@ const Header5 = ({ singleMenu, dark }) => {
                   <i className="far fa-map-marker-alt" /> 707, Bay Square 10, Business Bay Dubai, UAE
 
                 </li>
-                {/* <li>
-                  <i className="far fa-clock" /> Monday - Friday, 10am - 5pm
-                </li> */}
               </ul>
             </div>
             <div className="col-lg-5">
@@ -28,27 +25,13 @@ const Header5 = ({ singleMenu, dark }) => {
                     <option value="Bangla">French</option>
                   </select>
                 </div>
-                {/* <div className="social-style-two">
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-pinterest-p" />
-                  </a>
-                </div> */}
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/*Header-Upper*/}
-      <div className="header-upper">
+      <div className="header-upper" style={{ backgroundColor: "var(--ygency-secondary-color)" }}>
         <div className="container container-1620 clearfix">
           <div className="header-inner rpy-10 rel d-flex align-items-center">
             <div className="logo-outer">
@@ -84,10 +67,12 @@ const Header5 = ({ singleMenu, dark }) => {
                 <div className="icon">
                   <i className="fas fa-comments-alt" />
                 </div>
-                <div className="content">
+                <div className="content" style={{
+                  color: "var(--ygency-headline-color)",
+                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)",
+                }}>
                   <span>Call</span>
                   +971 54 390 1172
-
                 </div>
               </div>
               {/* menu sidbar */}

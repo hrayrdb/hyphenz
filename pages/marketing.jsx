@@ -6,19 +6,19 @@ const ServiceDetails = () => {
     <Layout header={5} footer={5} dark>
       {/* Page Banner Section Start */}
       <section
-        className="page-banner pt-210 rpt-150 pb-25 rel z-1"
+        className="page-banner pt-210 rpt-150 pb-65 rel z-1"
         style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
       >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h1 className="hero-title style-two mb-100 rmb-50 wow fadeInUp delay-0-2s">
+              <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
                 Marketing
-                <img
+                {/* <img
                   className="mxw-10 leaf"
                   src="assets/images/banner/leaf.png"
                   alt="Leaf"
-                />
+                /> */}
               </h1>
             </div>
           </div>
@@ -26,7 +26,7 @@ const ServiceDetails = () => {
       </section>
       {/* Page Banner Section End */}
       {/* Services Page About Area start */}
-      <section className="service-page-about py-130 rpy-100 rel z-1">
+      <section className="service-page-about py-30 rpy-30 rel z-1">
         <div className="container">
           <div className="row gap-90 align-items-center">
             <div className="col-lg-6">

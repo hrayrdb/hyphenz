@@ -16,18 +16,18 @@ const About = () => {
         style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
       >
         <div className="container">
-          <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
+          <h1 className="hero-title mb-120 rmb-120 wow fadeInUp delay-0-2s" style={{ textAlign: "left" }}>
             Welcome
-            <span className="arrow">
+            <span className="arrow" >
               <img
                 className="wow fadeInLeft delay-0-6s"
-                src="assets/images/hero/title-arrow.png"
+                src="assets/images/hero/hero-bg2.png"
                 alt="Arrow"
               />
             </span>
             <br />To Hyphenz
           </h1>
-          <div className="row align-items-center justify-content-between">
+          <div className="row align-items-center justify-content-between pt-50">
             <div className="col-xl-3 col-lg-4">
               <div className="hero-two-content mb-50 wow fadeInRight delay-0-2s">
                 <p>
@@ -137,7 +137,7 @@ const About = () => {
       </div> */}
       {/* Video Area end */}
       {/* Who We Are start */}
-      <section className="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
+      <section className="who-we-are-area pt-50 rpt-40 pb-35 rpb-25 rel z-1">
         <div className="container container-1290">
           <div className="row justify-content-center">
             <div className="col-lg-7">
@@ -188,7 +188,7 @@ const About = () => {
       </section>
       {/* Who We Are end */}
       {/* Who We Are start */}
-      <section className="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
+      <section className="who-we-are-area pt-30 rpt-40 pb-35 rpb-25 rel z-1">
         <div className="container container-1290">
           <div className="row justify-content-center">
             <div className="col-lg-7">
@@ -241,7 +241,7 @@ const About = () => {
       {/* Who We Are end */}
 
       {/* Who We Are start */}
-      <section className="who-we-are-area pt-100 rpt-80 pb-75 rpb-45 rel z-1">
+      <section className="who-we-are-area pt-30 rpt-40 pb-35 rpb-25 rel z-1">
         <div className="container container-1290">
           <div className="row justify-content-center">
             <div className="col-lg-7">
@@ -292,49 +292,62 @@ const About = () => {
       {/* Who We Are end */}
 
 
-      <section className="client-logo-area pt-130 rpt-100 pb-100 rpb-70">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-7">
-              <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
-                <span className="sub-title mb-15">Our</span>
-                <h2>Partners</h2>
+      <div className="client-logo-area pt-50 pb-20 rpt-50 rpb-20">
+        <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+          <span className="sub-title mb-20">Check out</span>
+          <h2>Our Partners</h2>
+        </div>
+      </div>
+
+      <div className="counter-section-five">
+        <div className="container container-1620">
+          <div className="row justify-content-center" style={{ display: "flex", gap: "1rem" }}>
+            <div className="col-xl-3 col-md-6" style={{ backgroundColor: "#0a1019", padding: "0" }}>
+              <div className="counter-item-three style-two counter-text-wrap wow fadeInRight delay-0-2s">
+                <i className="flaticon-abstract" />
+                <Link
+                  className="client-logo-item wow fadeInUp delay-0-3s"
+                  href="https://ad-tempo.com/"
+                >
+                  <img
+                    src="assets/images/client-logos/adtempo.png"
+                    alt="AdTempo"
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-3 col-md-6" style={{ backgroundColor: "#0a1019", padding: "0" }}>
+              <div className="counter-item-three style-two counter-text-wrap wow fadeInRight delay-0-4s">
+                <i className="flaticon-abstract" />
+                <Link
+                  className="client-logo-item wow fadeInUp delay-0-2s"
+                  href="https://premier-ecfm.ae/"
+                >
+                  <img
+                    src="assets/images/client-logos/premier.png"
+                    alt="Premier"
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-3 col-md-6" style={{ backgroundColor: "#0a1019", padding: "0" }}>
+              <div className="counter-item-three style-two counter-text-wrap wow fadeInRight delay-0-6s">
+                <i className="flaticon-abstract" />
+
+                <Link
+                  className="client-logo-item wow fadeInUp delay-0-4s"
+                  href="https://www.raseelrealestate.ae/"
+                >
+                  <img
+                    src="assets/images/client-logos/RRE.png"
+                    alt="REE"
+                  />
+                </Link>
               </div>
             </div>
           </div>
-          <div className="container">
-            <div className="client-logo-wrap">
-              <Link
-                className="client-logo-item wow fadeInUp delay-0-2s"
-                href="https://premier-ecfm.ae/"
-              >
-                <img
-                  src="assets/images/client-logos/premier.png"
-                  alt="Premier"
-                />
-              </Link>
-              <Link
-                className="client-logo-item wow fadeInUp delay-0-3s"
-                href="https://ad-tempo.com/"
-              >
-                <img
-                  src="assets/images/client-logos/adtempo.png"
-                  alt="AdTempo"
-                />
-              </Link>
-              <Link
-                className="client-logo-item wow fadeInUp delay-0-4s"
-                href="https://www.raseelrealestate.ae/"
-              >
-                <img
-                  src="assets/images/client-logos/RRE.png"
-                  alt="REE"
-                />
-              </Link>
-            </div>
-          </div>
         </div>
-      </section>
+      </div>
 
       {/* Team Area start */}
       {/* <section className="team-area pt-130 rpt-100">
